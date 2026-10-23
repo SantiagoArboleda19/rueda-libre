@@ -31,3 +31,17 @@ tarifas to reservas: http://127.0.0.1:5500/paginas/reservas.html
 reservas to index: http://127.0.0.1:5500/index.html
 reservas to tarifas: http://127.0.0.1:5500/paginas/tarifas.html
 reservas to reservas: http://127.0.0.1:5500/paginas/reservas.html
+
+V.2
+
+ESQUEMA PAGINA 1:
+
+header: Encabezado de la pagina 
+    img: Logo de la pagina
+    nav: Navegador principal
+        ul: Lista desordenada
+            li: Elemento de la Lista
+            li: Elemento de la Lista
+            li: Elemento de la Lista
+main: Contenido de la pagina
+    section: Seccion 

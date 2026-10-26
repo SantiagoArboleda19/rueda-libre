@@ -37,29 +37,74 @@
         </section>
 
         <section>
-            <form method="post"></form>
-            <fieldset>
-                <legend>Tus datos</legend>
+            <form method="post">
+                <fieldset>
+                    <legend>Tus datos</legend>
 
-                <label for="name">Nombre Completo:</label>
-                <input type="text" id="name" required>
+                    <label for="name">Nombre Completo:</label>
+                    <input type="text" id="name" name="nombre_completo" required>
 
-                <label for="text">Identificación:</label>
-                <input type="text" id="id" inputmode="numeric" required>
+                    <label for="id">Identificación:</label>
+                    <input type="text" id="id" name="identificacion" inputmode="numeric" required>
 
-                <label for="mail">Correo Electronico:</label>
-                <input type="email" id="mail" required>
+                    <label for="mail">Correo Electronico:</label>
+                    <input type="email" id="mail" name="correo_electronico" required>
 
-                <label for="phone">Telefono:</label>
-                <input type="tel" id="phone" required>
-            </fieldset>
+                    <label for="phone">Telefono:</label>
+                    <input type="tel" id="phone" name="telefono" required>
+                </fieldset>
 
-            <fieldset>
-                <legend>Tu reserva</legend>
+                <fieldset>
+                    <legend>Tu reserva</legend>
 
-                <label for="date">Fecha del alquiler</label>
-                <input type="date" id="date" required>
-            </fieldset>
+                    <label for="date">Fecha del alquiler</label>
+                    <input type="date" id="date" name="fecha_alquiler" required>
+
+                    <label for="kind">Tipo de bicicleta</label>
+                    <select name="tipo_bicicleta" id="kind">
+                        <option value="nocycle">Ninguna</option>
+                        <option value="urban">Urbana</option>
+                        <option value="mountain">Montaña</option>
+                        <option value="electrical">Electrica</option>
+                    </select>
+
+                    <fieldset>
+                        <legend>Planes</legend>
+
+                        <input type="radio" id="onehour" value="onehour" name="plan">
+                        <label for="onehour">1 hora</label>
+
+                        <input type="radio" id="mediumday" value="mediumday" name="plan">
+                        <label for="mediumday">Medio dia (4 horas)</label>
+
+                        <input type="radio" id="allday" value="allday" name="plan">
+                        <label for="allday">Dia completo</label>
+                    </fieldset>
+
+                    <label for="quantity">Cantidad de bicicletas</label>
+                    <input type="number" id="quantity" name="cantidad_bicicletas" required>
+
+                    <label for="route">Recorridos guiados</label>
+                    <select name="recorrido_guiado" id="route">
+                        <option value="noroute">Ninguna</option>
+                        <option value="river">Río y parques</option>
+                        <option value="neighborhood">Sabores de barrio</option>
+                        <option value="palmas">Reto Las Palmas</option>
+                    </select>
+
+                    <label for="coments">¿Tienes algun comentario?</label>
+                    <textarea name="comentarios" id="coments"></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Confirmación</legend>
+
+                    <label for="confirm">¿Aceptas las politicas de alquiler?</label>
+                    <input type="checkbox" id="confirm" name="acepta_politicas" value="si" required>
+                </fieldset>
+
+                <button type="submit" name="enviar" value="enviar">Enviar</button>
+            </form>
         </section>
     </main>
 

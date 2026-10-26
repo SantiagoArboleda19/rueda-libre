@@ -34,14 +34,145 @@ reservas to reservas: http://127.0.0.1:5500/paginas/reservas.html
 
 V.2
 
-ESQUEMA PAGINA 1:
+ESQUEMA PAGINA 1 (INDEX):
 
-header: Encabezado de la pagina 
-    img: Logo de la pagina
-    nav: Navegador principal
-        ul: Lista desordenada
-            li: Elemento de la Lista
-            li: Elemento de la Lista
-            li: Elemento de la Lista
-main: Contenido de la pagina
-    section: Seccion 
++-- <body>
+    |
+    +-- <header> (Encabezado principal)
+    |   |-- <h1> Rueda Libre
+    |   |-- <nav> (Navegación externa del sitio)
+    |   |   +-- <ul>
+    |   |       |-- <li> Inicio
+    |   |       |-- <li> Tarifas y rutas
+    |   |       +-- <li> Reservas
+    |       +-- <p> Párrafo de bienvenida + enlace a ubicación
+    |   
+    |
+    +-- <main> (Contenido principal)
+
+    |   |-- <img> [Imagen de portada]
+        |-- <a> [Botón: Reserva ahora]
+    |   +-- <nav> (Navegación interna / Anclas)
+    |       +-- <ul>
+    |           |-- <li> ¿Quiénes somos?
+    |           |-- <li> Nuestros servicios
+    |           |-- <li> ¿Cómo alquilar?
+    |           +-- <li> Encuéntranos
+    |   |-- <section id="quienes-somos">
+    |   |   |-- <h2> ¿Quiénes somos?
+    |   |   +-- <p> Texto descriptivo y servicios
+    |   |
+    |   |-- <section id="servicios">
+    |   |   |-- <h2> Nuestros servicios
+    |   |   |-- <article> Alquiler de bicicletas
+    |   |   |   |-- <h3> Alquiler de bicicletas
+    |   |   |   +-- <p> Descripción y accesorios
+    |   |   |-- <article> Recorridos guiados
+    |   |   |   |-- <h3> Recorridos guiados
+    |   |   |   +-- <p> Descripción con enlace a tarifas
+    |   |   +-- <article> Taller básico
+    |   |       |-- <h3> Taller básico
+    |   |       +-- <p> Mantenimiento preventivo
+    |   |
+    |   |-- <section id="como-alquilar">
+    |   |   |-- <h2> Pasos para alquilar
+    |   |   |-- <figure>
+    |   |   |   +-- <img> [Bicicleta]
+    |   |   +-- <ol> Lista ordenada de pasos
+    |   |       |-- <li> Elige tu bicicleta + <p>
+    |   |       |-- <li> Presenta tus datos + <p>
+    |   |       |-- <li> Realiza el pago + <p>
+    |   |       +-- <li> Recibe tu equipo + <p>
+    |   |
+    |   |-- <section id="beneficios">
+    |   |   |-- <h2> Beneficios del servicio
+    |   |   +-- <ul> Ventajas
+    |   |       |-- <li> Movilidad sostenible
+    |   |       |-- <li> Explora la ciudad con libertad
+    |   |       +-- <li> Seguridad y comodidad
+    |   |
+    |   +-- <section id="encuentranos">
+    |       |-- <h2> Encuéntranos o contáctanos
+    |       |-- <figure>
+    |       |   +-- <img> [Imagen de ruta / mapa]
+    |       |-- <p> <a> Enlace a Google Maps
+    |       +-- <p> <a> Enlace de correo electrónico
+    |
+    +-- <footer> (Pie de página)
+        +-- <address>
+            |-- <p> Rueda Libre
+            |-- <p> hola@ruedalibre.example
+            +-- <p> <time> 2026 </time>
+
+ESQUEMA PAGINA 2 (TARIFAS):
+
++-- <body>
+    |
+    +-- <header> (Encabezado principal)
+    |   |-- <img> [Imagen de portada]
+    |   |-- <nav> (Navegación principal del sitio)
+    |   |   +-- <ul>
+    |   |       |-- <li> Inicio (../index.html)
+    |   |       |-- <li> Tarifas y rutas (tarifas.html)
+    |   |       +-- <li> Reservas (reservas.html)
+    |   |-- <h1> Tarifas Rueda Libre
+    |
+    +-- <main> (Contenido principal)
+    |   |-- <section id="alquiler">
+    |   |   |-- <h2> Alquiler de bicicletas
+    |   |   |-- <table>
+    |   |   |   |-- <caption> Precios de alquiler de bicicletas
+    |   |   |   |-- <thead> Encabezados (Tipo, 1h, 4h, Día completo)
+    |   |   |   +-- <tbody> Filas de datos (Urbana, Montaña, Eléctrica)
+    |   |   +-- <p> <em> Nota aclaratoria (Incluye casco y candado)
+    |   |
+    |   |-- <section id="precios-recorridos">
+    |   |   |-- <h2> Recorridos guiados
+    |   |   |-- <table>
+    |   |   |   |-- <caption> Precios de nuestros recorridos
+    |   |   |   |-- <thead> Encabezados (Recorrido, Distancia, Duración, Nivel, Precio)
+    |   |   |   +-- <tbody> Filas de datos (Río y Parques, Sabores de Barrio, Reto Las Palmas)
+    |   |   +-- <p> <em> Horarios y recomendaciones de qué llevar
+    |   |
+    |   +-- <section id="cta-reserva">
+    |       +-- <a> [Botón: RESERVA AHORA]
+    |
+    +-- <footer> (Pie de página)
+        +-- <address>
+            |-- <p> Rueda Libre
+            |-- <p> hola@ruedalibre.example
+            +-- <p> <time> 2026 </time>
+
+ESQUEMA PAGINA 3 (RESERVAS):
+
++-- <body>
+    |
+    +-- <header> (Encabezado general: Nombre del negocio + Navegación principal)
+    |   |-- <h1> Rueda Libre (Nombre del negocio)
+    |   +-- <nav> (Navegación principal)
+    |       +-- <ul>
+    |           |-- <li> Inicio (../index.html)
+    |           |-- <li> Tarifas y rutas (tarifas.html)
+    |           +-- <li> Reservas (reservas.html)
+    |
+    +-- <main> (Contenido principal propio de la página)
+    |   |-- <section id="contacto-reserva">
+    |   |   +-- <p> <a> [Escríbenos / mailto]
+    |   |
+    |   +-- <section id="horarios">
+    |       |-- <h2> Horarios de atención
+    |       +-- <ul> Lista de días y horas
+    |           |-- <li> Lunes 7:00 a.m. a 7:00 p.m.
+    |           |-- <li> Martes 7:00 a.m. a 7:00 p.m.
+    |           |-- <li> Miércoles 7:00 a.m. a 7:00 p.m.
+    |           |-- <li> Jueves 7:00 a.m. a 7:00 p.m.
+    |           |-- <li> Viernes 7:00 a.m. a 7:00 p.m.
+    |           |-- <li> Sábados 6:00 a. m. a 2:00 p. m.
+    |           |-- <li> Domingos 6:00 a. m. a 2:00 p. m.
+    |           +-- <li> Festivos 6:00 a. m. a 2:00 p. m.
+    |
+    +-- <footer> (Pie de página general)
+        +-- <address>
+            |-- <p> Rueda Libre
+            |-- <p> hola@ruedalibre.example
+            +-- <p> <time> 2026 </time>

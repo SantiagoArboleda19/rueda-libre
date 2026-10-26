@@ -42,23 +42,25 @@
                     <legend>Tus datos</legend>
 
                     <label for="name">Nombre Completo:</label>
-                    <input type="text" id="name" name="nombre_completo" required>
+                    <input type="text" id="name" name="nombre_completo" minlength="3" required>
 
-                    <label for="id">Identificación:</label>
-                    <input type="text" id="id" name="identificacion" inputmode="numeric" required>
+                    <label for="identi">Identificación:</label>
+                    <input type="text" id="identi" name="identificacion" inputmode="numeric" 
+                    pattern="[0-9]{6,10}" title="Solo numeros, del 0 al 9" required>
 
                     <label for="mail">Correo Electronico:</label>
-                    <input type="email" id="mail" name="correo_electronico" required>
+                    <input type="email" id="mail" name="correo_electronico" required> 
 
                     <label for="phone">Telefono:</label>
-                    <input type="tel" id="phone" name="telefono" required>
+                    <input type="tel" id="phone" name="telefono"  inputmode="numeric" 
+                    pattern="3[0-9]{9}"" title="El numero debe iniciar por 3 y tener ">
                 </fieldset>
 
                 <fieldset>
                     <legend>Tu reserva</legend>
 
                     <label for="date">Fecha del alquiler</label>
-                    <input type="date" id="date" name="fecha_alquiler" required>
+                    <input type="date" id="date" name="fecha_alquiler" min="2026-11-01" max="2026-12-31" required>
 
                     <label for="kind">Tipo de bicicleta</label>
                     <select name="tipo_bicicleta" id="kind">
@@ -82,7 +84,7 @@
                     </fieldset>
 
                     <label for="quantity">Cantidad de bicicletas</label>
-                    <input type="number" id="quantity" name="cantidad_bicicletas" required>
+                    <input type="number" id="quantity" name="cantidad_bicicletas" min="1" max="6" required>
 
                     <label for="route">Recorridos guiados</label>
                     <select name="recorrido_guiado" id="route">

@@ -277,12 +277,44 @@ Pirmer hallazgo: Etiquetas img sin un correcto alt.
 Segundo hallazgo: Incorrecta jerarquia de encabezados pasando de h1 a h3 directamente.
     Corrección: Jerearquia de encabezados h1 -> h2 -> h3.
 
-PALETA DE COLORES MINIRETO 8------------------------------------------------------------------
-Texto blanco(FFFFFF) sobre Verde Ruta(00694C): Contrast Ratio -> 6.72:1 APTA PARA TEXTO NORMAL Y GRANDE.
-Blanco(FFFFFF) sobre Naranja Pedal(FF6600): Contrast Ratio -> 2.93:1 NO APTA PARA TEXTO NORMAL Y GRANDE. 
-Azul Noche(#252850) sobre Naranja Pedal(FF6600): Contrast Ratio -> 4.77:1 APTA PARA TEXTO NORMAL Y GRANDE.
-Azul Noche(#252850) sobre Crema(#FFFFBF): Contrast Ratio -> 13.55:1 APTA PARA TEXTO NORMAL Y GRANDE.
-Gris Asfalto(#6B6E70) sobre Crema(#FFFFBF): Contrast Ratio -> 4.96:1 APTA PARA TEXTO NORMAL Y GRANDE.
-Verde Ruta(#6B6E70) sobre Crema(#FFFFBF): Contrast Ratio -> 4.49:1 NO APTA PARA TEXTO NORMAL, SI PARA GRANDE.
-Naranja Pedal(#FF6600) sobre Crema(#FFFFBF): Contrast Ratio -> 2.83:1 NO APTA PARA TEXTO NORMAL Y GRANDE.
-Blanco() sobre Azul Noche():
+Minireto 8: Contraste y mapa de uso del color
+1. Clasificación de las combinaciones de color
+
+Según los criterios de accesibilidad WCAG nivel AA, las combinaciones se clasifican de la siguiente manera:
+
+    Blanco (#FFFFFF) sobre Verde Ruta (#1E7A4F): ratio de 5.31:1. Apta para texto normal y grande.
+    Blanco (#FFFFFF) sobre Naranja Pedal (#F39A2B): ratio de 2.22:1. No apta para texto normal ni grande.
+    Azul Noche (#14213D) sobre Naranja Pedal (#F39A2B): ratio de 7.20:1. Apta para texto normal y grande.
+    Azul Noche (#14213D) sobre Crema (#FAF6EF): ratio de 14.83:1. Apta para texto normal y grande.
+    Gris Asfalto (#5B6470) sobre Crema (#FAF6EF): ratio de 5.57:1. Apta para texto normal y grande.
+    Verde Ruta (#1E7A4F) sobre Crema (#FAF6EF): ratio de 4.93:1. Apta para texto normal y grande.
+    Naranja Pedal (#F39A2B) sobre Crema (#FAF6EF): ratio de 2.06:1. No apta para texto normal ni grande.
+    Blanco (#FFFFFF) sobre Azul Noche (#14213D): ratio de 15.97:1. Apta para texto normal y grande.
+
+Conclusión: seis combinaciones son aptas para texto normal y grande, y dos no son aptas para texto de ningún tamaño según el nivel AA.
+2. Mapa de uso del color
+
+    Texto principal: utilizaré Azul Noche (#14213D) sobre el fondo Crema (#FAF6EF), porque ofrece un contraste de 14.83:1 y
+    facilita la lectura.
+    Texto secundario: utilizaré Gris Asfalto (#5B6470) sobre Crema (#FAF6EF), con un contraste de 5.57:1.
+    Fondos: utilizaré Crema (#FAF6EF) como fondo general de la página, porque es un color suave que permite combinarse con textos
+    oscuros y mantener una buena legibilidad.
+    Botones principales: utilizaré Verde Ruta (#1E7A4F) con texto blanco (#FFFFFF), ya que su contraste es de 5.31:1 y cumple los
+    requisitos para texto normal.
+    Botones secundarios: utilizaré Naranja Pedal (#F39A2B) con texto Azul Noche (#14213D), porque su contraste de 7.20:1 garantiza
+    una buena legibilidad.
+    Enlaces: utilizaré Verde Ruta (#1E7A4F) sobre el fondo Crema (#FAF6EF), con un contraste de 4.93:1. Además, los enlaces tendrán
+    un subrayado para que puedan identificarse sin depender únicamente del color.
+    Destacados: utilizaré Naranja Pedal (#F39A2B) en elementos decorativos, etiquetas y detalles visuales. Evitaré utilizarlo como 
+    texto sobre Crema o con texto blanco, ya que esas combinaciones no alcanzan el contraste mínimo requerido.
+
+3. Reflexión final
+
+La comprobación del contraste me permitió identificar qué combinaciones de colores son accesibles y cuáles debo evitar.
+Aprendí que no basta con elegir colores que se vean bien juntos, sino que también deben facilitar la lectura y la navegación.
+
+Por eso, utilizaré Azul Noche y Gris Asfalto para los textos, Crema para los fondos, Verde Ruta para los botones principales y 
+los enlaces, y Naranja Pedal para los botones secundarios y los elementos destacados. De esta manera, mantendré una identidad 
+visual coherente y mejoraré la accesibilidad de Minireto 8.
+
+GITHUB PAGE: https://santiagoarboleda19.github.io/rueda-libre/

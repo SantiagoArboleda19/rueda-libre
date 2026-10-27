@@ -1,0 +1,27 @@
+:root {
+    --texto-principal: #14213D;
+    --texto-secundario: #5B6470;
+    --fondos: #FAF6EF;
+    --botones-principales: #1E7A4F;
+    --botones-secundarios: #F39A2B;
+    --enlaces: #1E7A4F;
+    --elementos-decorativos: #F39A2B;
+
+    --fuente-titulos: "Montserrat", Arial, sans-serif;
+    --fuente-textos: "OPen sans", Arial, sans-serif;
+
+    --espaciado-pequeño: 0.5rem;
+    --espaciado-mediano: 1rem;
+    --espaciado-grande: 2rem;
+}
+
+body {
+    font-family: var(--fuente-textos);
+    color: var(--texto-secundario);
+    background-color: var(--fondos);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--fuente-titulos);
+    color: var(--texto-principal);
+}

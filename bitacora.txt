@@ -32,7 +32,7 @@ reservas to index: http://127.0.0.1:5500/index.html
 reservas to tarifas: http://127.0.0.1:5500/paginas/tarifas.html
 reservas to reservas: http://127.0.0.1:5500/paginas/reservas.html
 
-V.2
+V 0.2
 
 ESQUEMA PAGINA 1 (INDEX):
 
@@ -271,7 +271,8 @@ DATOS DE PRUEBA, MINIRETO 7-----------------------------------------------------
         "El valor debe ser igual o anterior
          a 31/12/2026"
 
-AUDITORIA MINIRETO 8----------------------------------------------------------------------
+AUDITORIA MINIRETO 8-----------------------------------------------------------------------------------------------------------
+
 Pirmer hallazgo: Etiquetas img sin un correcto alt.
     Corrección: Se modifica el alt de las etiquetas img importantes y se deja alt vacio para las img no importantes.
 Segundo hallazgo: Incorrecta jerarquia de encabezados pasando de h1 a h3 directamente.
@@ -318,3 +319,12 @@ los enlaces, y Naranja Pedal para los botones secundarios y los elementos destac
 visual coherente y mejoraré la accesibilidad de Minireto 8.
 
 GITHUB PAGE: https://santiagoarboleda19.github.io/rueda-libre/
+
+HERENCIA MINIRETO9----------------------------------------------------------------------------------------------------------------
+
+Las variables heredadas son las siguientes:
+    font-family: var(--fuente-textos);
+    color: var(--texto-secundario);
+La variable que no se hereda es la siguiente:
+    background-color: var(--fondos);
+

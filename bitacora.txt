@@ -279,4 +279,10 @@ Segundo hallazgo: Incorrecta jerarquia de encabezados pasando de h1 a h3 directa
 
 PALETA DE COLORES MINIRETO 8------------------------------------------------------------------
 Texto blanco(FFFFFF) sobre Verde Ruta(00694C): Contrast Ratio -> 6.72:1 APTA PARA TEXTO NORMAL Y GRANDE.
-blanco(FFFFFF) sobre Naranja Pedal(FF6600): Contrast Ratio -> 2.93:1
+Blanco(FFFFFF) sobre Naranja Pedal(FF6600): Contrast Ratio -> 2.93:1 NO APTA PARA TEXTO NORMAL Y GRANDE. 
+Azul Noche(#252850) sobre Naranja Pedal(FF6600): Contrast Ratio -> 4.77:1 APTA PARA TEXTO NORMAL Y GRANDE.
+Azul Noche(#252850) sobre Crema(#FFFFBF): Contrast Ratio -> 13.55:1 APTA PARA TEXTO NORMAL Y GRANDE.
+Gris Asfalto(#6B6E70) sobre Crema(#FFFFBF): Contrast Ratio -> 4.96:1 APTA PARA TEXTO NORMAL Y GRANDE.
+Verde Ruta(#6B6E70) sobre Crema(#FFFFBF): Contrast Ratio -> 4.49:1 NO APTA PARA TEXTO NORMAL, SI PARA GRANDE.
+Naranja Pedal(#FF6600) sobre Crema(#FFFFBF): Contrast Ratio -> 2.83:1 NO APTA PARA TEXTO NORMAL Y GRANDE.
+Blanco() sobre Azul Noche():

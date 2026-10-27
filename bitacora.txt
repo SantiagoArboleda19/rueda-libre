@@ -270,3 +270,13 @@ DATOS DE PRUEBA, MINIRETO 7-----------------------------------------------------
     +-- Resultado obtenido:
         "El valor debe ser igual o anterior
          a 31/12/2026"
+
+AUDITORIA MINIRETO 8----------------------------------------------------------------------
+Pirmer hallazgo: Etiquetas img sin un correcto alt.
+    Corrección: Se modifica el alt de las etiquetas img importantes y se deja alt vacio para las img no importantes.
+Segundo hallazgo: Incorrecta jerarquia de encabezados pasando de h1 a h3 directamente.
+    Corrección: Jerearquia de encabezados h1 -> h2 -> h3.
+
+PALETA DE COLORES MINIRETO 8------------------------------------------------------------------
+Texto blanco(FFFFFF) sobre Verde Ruta(00694C): Contrast Ratio -> 6.72:1 APTA PARA TEXTO NORMAL Y GRANDE.
+blanco(FFFFFF) sobre Naranja Pedal(FF6600): Contrast Ratio -> 2.93:1

@@ -176,3 +176,97 @@ ESQUEMA PAGINA 3 (RESERVAS):
             |-- <p> Rueda Libre
             |-- <p> hola@ruedalibre.example
             +-- <p> <time> 2026 </time>
+
+
+DATOS DE PRUEBA, MINIRETO 7------------------------------------------------------------------------
+
+|
++-- 1. Campo: name
+|   |
+|   +-- Dato de prueba: "Lu"
+|   +-- Resultado esperado:
+|   |   Advertencia solicitando 3 caracteres o más.
+|   |
+|   +-- Resultado obtenido:
+|       "Alarga el texto a 3 o más caracteres
+|        (actualmente, usas 2)"
+|
++-- 2. Campo: identity
+|   |
+|   +-- Dato de prueba: "Lucas"
+|   +-- Resultado esperado:
+|   |   Advertencia solicitando únicamente
+|   |   dígitos del 0 al 9.
+|   |
+|   +-- Resultado obtenido:
+|       "Haz coincidir el formato solicitado
+|        (Mínimo 6 dígitos, máximo 10.
+|        Solo números, del 0 al 9)"
+|
++-- 3. Campo: identity
+|   |
+|   +-- Dato de prueba: "54321"
+|   +-- Resultado esperado:
+|   |   Advertencia solicitando entre
+|   |   6 y 10 dígitos.
+|   |
+|   +-- Resultado obtenido:
+|       "(Mínimo 6 dígitos, máximo 10.
+|        Solo números, del 0 al 9)"
+|
++-- 4. Campo: email
+|   |
+|   +-- Dato de prueba: "santiagogmail.com"
+|   +-- Resultado esperado:
+|   |   Advertencia solicitando el formato
+|   |   correcto, incluyendo el signo @.
+|   |
+|   +-- Resultado obtenido:
+|       "Incluye un signo '@' en la dirección
+|        de correo electrónico. La dirección
+|        no incluye el signo '@'"
+|
++-- 5. Campo: phone
+|   |
+|   +-- Dato de prueba: "0123456789"
+|   +-- Resultado esperado:
+|   |   Advertencia solicitando que el número
+|   |   comience por 3.
+|   |
+|   +-- Resultado obtenido:
+|       "Haz coincidir el formato solicitado.
+|        (El número debe iniciar por 3
+|        y tener 10 dígitos)"
+|
++-- 6. Campo: phone
+|   |
+|   +-- Dato de prueba: "300123"
+|   +-- Resultado esperado:
+|   |   Advertencia solicitando 10 dígitos.
+|   |
+|   +-- Resultado obtenido:
+|       "Haz coincidir el formato solicitado.
+|        (El número debe iniciar por 3
+|        y tener 10 dígitos)"
+|
++-- 7. Campo: date-reservation
+|   |
+|   +-- Dato de prueba: "26-10-2026"
+|   +-- Resultado esperado:
+|   |   Advertencia solicitando una fecha
+|   |   igual o posterior al 01/11/2026.
+|   |
+|   +-- Resultado obtenido:
+|       "El valor debe ser igual o posterior
+|        a 01/11/2026"
+|
++-- 8. Campo: date-reservation
+    |
+    +-- Dato de prueba: "05-01-2027"
+    +-- Resultado esperado:
+    |   Advertencia solicitando una fecha
+    |   igual o anterior al 31/12/2026.
+    |
+    +-- Resultado obtenido:
+        "El valor debe ser igual o anterior
+         a 31/12/2026"

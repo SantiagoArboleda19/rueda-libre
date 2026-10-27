@@ -44,23 +44,23 @@
                     <label for="name">Nombre Completo:</label>
                     <input type="text" id="name" name="nombre_completo" minlength="3" required>
 
-                    <label for="identi">Identificación:</label>
-                    <input type="text" id="identi" name="identificacion" inputmode="numeric" 
-                    pattern="[0-9]{6,10}" title="Solo numeros, del 0 al 9" required>
+                    <label for="identity">Identificación:</label>
+                    <input type="text" id="identity" name="identificacion" inputmode="numeric" 
+                    pattern="[0-9]{6,10}" title="Minimo 6 digitos, maximo 6. Solo numeros, del 0 al 9" required>
 
-                    <label for="mail">Correo Electronico:</label>
-                    <input type="email" id="mail" name="correo_electronico" required> 
+                    <label for="email">Correo Electronico:</label>
+                    <input type="email" id="email" name="correo_electronico" required> 
 
                     <label for="phone">Telefono:</label>
                     <input type="tel" id="phone" name="telefono"  inputmode="numeric" 
-                    pattern="3[0-9]{9}"" title="El numero debe iniciar por 3 y tener ">
+                    pattern="3[0-9]{9}"" title="El numero debe iniciar por 3 y tener 10 digitos">
                 </fieldset>
 
                 <fieldset>
                     <legend>Tu reserva</legend>
 
-                    <label for="date">Fecha del alquiler</label>
-                    <input type="date" id="date" name="fecha_alquiler" min="2026-11-01" max="2026-12-31" required>
+                    <label for="date-reservation">Fecha del alquiler</label>
+                    <input type="date" id="date-reservation" name="fecha_alquiler" min="2026-11-01" max="2026-12-31" required>
 
                     <label for="kind">Tipo de bicicleta</label>
                     <select name="tipo_bicicleta" id="kind">
@@ -95,7 +95,7 @@
                     </select>
 
                     <label for="coments">¿Tienes algun comentario?</label>
-                    <textarea name="comentarios" id="coments"></textarea>
+                    <textarea name="comentarios" id="coments" maxlength="300"></textarea>
                 </fieldset>
 
                 <fieldset>

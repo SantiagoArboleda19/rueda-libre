@@ -328,3 +328,23 @@ Las variables heredadas son las siguientes:
 La variable que no se hereda es la siguiente:
     background-color: var(--fondos);
 
+
+ESPECIFICIDAD MINIRETO10---------------------------------------------------------------------------------------------------------
+
+Usa DevTools para descubrir por qué la clase no se aplica. Registra en la bitácora la especificidad de cada selector y la causa del 
+problema.
+
+(1,0,1)
+#menu a {
+    color: var(--texto-secundario); 
+}
+
+(0,1,0)
+.activo {
+    color: var(--enlaces);
+    font-weight: 600; 
+}
+
+El problema esta en que el primer selector tiene mayor especificidad que el segundo selector por lo tanto se aplica el color
+para textos en lugar que el color para los enlaces. En mi codigo espicificamente se elimina el primer selector ya que el color para
+textos ya se hereda desde el cuerpo (body).

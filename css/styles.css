@@ -21,7 +21,63 @@ body {
     background-color: var(--fondos);
 }
 
+a {
+    text-decoration: none;
+    color: var(--texto-principal);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:focus,
+input:focus,
+textarea:focus,
+select:focus,
+button:focus{
+    outline: solid 2px var(--enlaces);
+    border-radius: 3px;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--fuente-titulos);
     color: var(--texto-principal);
+}
+
+#menu .activo {
+    color: var(--enlaces);
+    font-weight: 600; 
+}
+
+#menu li {
+    list-style-type: none;
+    color: var(--texto-principal);
+}
+
+#menu a:focus {
+    outline: 2px solid var(--enlaces);
+    outline-offset: 1px;
+    border-radius: 3px;
+}
+
+#menu a:hover {
+    color: var(--enlaces);
+    font-weight: bold; 
+}
+
+.reserva {
+    width: var(--espaciado-mediano);
+    height: var(--espaciado-mediano);
+    padding: 4px;
+    background-color: var(--botones-principales);
+    color: var(--fondos);
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.reserva:hover{
+    background-color: var(--botones-secundarios);
+}
+
+.reserva:focus{
+    color: var(--texto-principal);
+    outline: solid 2px var(--texto-principal);
 }

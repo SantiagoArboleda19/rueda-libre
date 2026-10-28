@@ -26,17 +26,18 @@ body {
 }
 
 
-main{
+main {
     margin: auto;
     max-width: 75rem;
 }
 
-table{
+table {
     width: 100%;
     border-collapse: collapse;
 }
 
-th, td{
+th,
+td {
     border: 1px solid var(--texto-secundario);
     padding: var(--espaciado-pequeño);
     text-align: left;
@@ -62,15 +63,21 @@ a:focus,
 input:focus,
 textarea:focus,
 select:focus,
-button:focus{
+button:focus {
     outline: solid 2px var(--enlaces);
     border-radius: 3px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--fuente-titulos);
     color: var(--texto-principal);
 }
+
 
 #portada {
     min-height: 45vh;
@@ -78,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #menu .activo {
     color: var(--enlaces);
-    font-weight: 600; 
+    font-weight: 600;
 }
 
 #menu li {
@@ -93,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #menu a:hover {
     color: var(--enlaces);
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 .reserva {
@@ -106,24 +113,24 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 2px;
 }
 
-.reserva:hover{
+.reserva:hover {
     background-color: var(--botones-secundarios);
 }
 
-.reserva:focus{
+.reserva:focus {
     color: var(--texto-principal);
     outline: solid 2px var(--texto-principal);
 }
 
-#tarjeta-contenedor{
+#tarjeta-contenedor {
     display: flex;
 }
 
-#tarjeta-contenedor a{
+#tarjeta-contenedor a {
     color: var(--botones-secundarios);
 }
 
-#tarjeta-contenedor h3{
+#tarjeta-contenedor h3 {
     margin: auto;
     text-align: center;
     color: #FFFFFF;
@@ -139,6 +146,43 @@ h1, h2, h3, h4, h5, h6 {
     flex: 1;
 }
 
-.tarjeta img{
+.tarjeta img {
     width: 100%;
+}
+
+input,
+select,
+textarea {
+    display: block;
+    width: 100%;
+}
+
+
+#planes-contenedor input {
+    display: block;
+    width: inherit;
+}
+
+form #confirm {
+    width: inherit;
+}
+
+form {
+    padding: var(--espaciado-mediano);
+    box-shadow: 0 0 8px #5B6470;
+    border-radius: 8px;
+}
+
+form button {
+    padding: 16px 32px;
+    margin-top: var(--espaciado-pequeño);
+
+    font-size: var(--espaciado-mediano);
+    font-weight: 600;
+    color: var(--fondos);
+    background-color: var(--texto-principal);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
 }

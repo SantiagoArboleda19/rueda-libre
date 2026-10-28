@@ -79,28 +79,30 @@ h6 {
 }
 
 
+/*
 #portada {
     min-height: 45vh;
 }
+*/
 
-#menu .activo {
+.lista-menu .activo {
     color: var(--enlaces);
-    font-weight: 600;
+    font-weight: 700;
 }
 
-#menu li {
+.lista-menu li {
     color: var(--texto-principal);
 }
 
-#menu a:focus {
+.lista-menu a:focus {
     outline: 2px solid var(--enlaces);
     outline-offset: 1px;
     border-radius: 3px;
 }
 
-#menu a:hover {
+.lista-menu a:hover {
     color: var(--enlaces);
-    font-weight: bold;
+    font-weight: 800;
 }
 
 .reserva {
@@ -168,9 +170,9 @@ form #confirm {
 }
 
 form {
-    padding: var(--espaciado-mediano);
+    padding: var(--espaciado-grande);
     box-shadow: 0 0 8px #5B6470;
-    border-radius: 8px;
+    border-radius: 15px;
 }
 
 form button {
@@ -184,5 +186,47 @@ form button {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+form fieldset {
+    padding-top: var(--espaciado-grande);
+    margin-bottom: var(--espaciado-grande);
+    box-shadow: 0 0 var(--espaciado-pequeño) var(--texto-principal);
+    border-radius: 10px;
+    border: none;
+}
+
+#planes-contenedor {
+    padding-top: var(--espaciado-pequeño);
+    margin-bottom: var(--espaciado-pequeño);
+    border-radius: 8px;
+}
+
+
+legend {
+    background-color: var(--texto-principal);
+    color: var(--fondos);
+    padding: 0.2rem var(--espaciado-pequeño);
+    margin: 0.2rem;
+    border-radius: 3px;
+}
+
+#planes-contenedor legend {
+    background-color: var(--texto-secundario);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lista-menu {
+    display: flex;
+    gap: var(--espaciado-pequeño);
+    padding-left: initial;
+}
+
+.contenedor-lista-menu {
+    margin-right: var(--espaciado-mediano);
 }

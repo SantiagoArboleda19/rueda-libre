@@ -15,15 +15,25 @@
 </head>
 
 <body>
-    <header>
-        <h1>Rueda Libre</h1>
-        <nav>
-            <ul id="menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="tarifas.html">Tarifas y rutas</a></li>
-                <li><a href="reservas.html" class="activo">Reservas</a></li>
-            </ul>
-        </nav>
+    <header class="menu">
+        <div>
+            <h1>Rueda Libre</h1>
+        </div>
+        <div>
+            <nav>
+                <ul class="lista-menu">
+                    <li>
+                        <a href="../index.html" class="activo">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="tarifas.html">Tarifas y rutas</a>
+                    </li>
+                    <li>
+                        <a href="reservas.html">Reservas</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -84,9 +94,9 @@
                         <option value="electrical">Electrica</option>
                     </select>
 
-                    <fieldset>
+                    <fieldset id="planes-contenedor">
                         <legend>Planes</legend>
-                        <div id="planes-contenedor">
+                        <div>
                             <input type="radio" id="onehour" value="onehour" name="plan">
                             <label for="onehour">1 hora</label>
 

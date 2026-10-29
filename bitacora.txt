@@ -348,3 +348,14 @@ problema.
 El problema esta en que el primer selector tiene mayor especificidad que el segundo selector por lo tanto se aplica el color
 para textos en lugar que el color para los enlaces. En mi codigo espicificamente se elimina el primer selector ya que el color para
 textos ya se hereda desde el cuerpo (body).
+
+MEDIDAD MINITERO 11-------------------------------------------------------------------------------------------------
+
+Mide en DevTools (Computed) el ancho total de una tarjeta antes y después de cambiar box-sizing y registra ambos
+valores en la bitácora. Haz commit y push.
+
+Tarjeta : input#date-reservation 
+
+Antes: 1114.23 x 20.9833
+
+Despues: 1108 x 20.9833

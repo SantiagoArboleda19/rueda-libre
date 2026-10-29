@@ -1,3 +1,7 @@
+/* ==================================================
+   1. VARIABLES Y CONFIGURACIÓN GENERAL
+   ================================================== */
+
 :root {
     --texto-principal: #14213D;
     --texto-secundario: #5B6470;
@@ -8,7 +12,7 @@
     --elementos-decorativos: #F39A2B;
 
     --fuente-titulos: "Montserrat", Arial, sans-serif;
-    --fuente-textos: "OPen sans", Arial, sans-serif;
+    --fuente-textos: "Open Sans", Arial, sans-serif;
 
     --espaciado-pequeño: 0.5rem;
     --espaciado-mediano: 1rem;
@@ -25,11 +29,177 @@ body {
     background-color: var(--fondos);
 }
 
-
 main {
     margin: auto;
     max-width: 75rem;
 }
+
+
+/* ==================================================
+   2. TÍTULOS Y ENLACES
+   ================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--fuente-titulos);
+    color: var(--texto-principal);
+}
+
+a {
+    color: var(--texto-principal);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:focus,
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+    outline: solid 2px var(--enlaces);
+    border-radius: 3px;
+}
+
+
+/* ==================================================
+   3. ENCABEZADO Y MENÚ
+   ================================================== */
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lista-menu {
+    display: flex;
+    gap: var(--espaciado-pequeño);
+    padding-left: initial;
+}
+
+.lista-menu li {
+    color: var(--texto-principal);
+    list-style-type: none;
+}
+
+.lista-menu .activo {
+    color: var(--enlaces);
+    font-weight: 700;
+}
+
+.lista-menu a:hover {
+    color: var(--enlaces);
+    font-weight: 800;
+}
+
+.lista-menu a:focus {
+    outline: 2px solid var(--enlaces);
+    outline-offset: 1px;
+    border-radius: 3px;
+}
+
+.contenedor-lista-menu {
+    margin-right: var(--espaciado-mediano);
+}
+
+
+/* ==================================================
+   4. BOTONES DE RESERVA
+   ================================================== */
+
+.reserva {
+    display: inline-block;
+    padding: 4px;
+    background-color: var(--botones-principales);
+    color: var(--fondos);
+    border-radius: 17px;
+}
+
+.reserva:hover {
+    background-color: var(--botones-secundarios);
+}
+
+.reserva:focus {
+    color: var(--texto-principal);
+    outline: solid 2px var(--texto-principal);
+    border-radius: 17px;
+}
+
+/* ==================================================
+   5. TARJETAS DE SERVICIOS
+   ================================================== */
+
+#servicios-contenedor {
+    display: flex;
+    flex-direction: column;
+}
+
+#tarjeta-contenedor {
+    display: flex;
+}
+
+.tarjeta {
+    flex: 1;
+    padding: var(--espaciado-pequeño);
+    margin: var(--espaciado-pequeño);
+    border-radius: 15px;
+    background-color: var(--texto-principal);
+    color: var(--fondos);
+    box-shadow: 0 0 8px var(--texto-principal);
+}
+
+.tarjeta img {
+    width: 100%;
+}
+
+.tarjeta h3 {
+    margin: auto;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.tarjeta a {
+    color: var(--botones-secundarios);
+}
+
+.tarjeta-nuevo {
+    display: flex;
+    position: relative;
+}
+
+.tarjeta-nuevo span {
+    position: absolute;
+    padding: 0.9rem;
+    right: var(--espaciado-mediano);
+    top: var(--espaciado-mediano);
+    background-color: var(--botones-secundarios);
+    font-weight: 900;
+    border-radius: 5px;
+}
+
+.tarjeta-electrica {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-electrica {
+    min-width: 33%;
+}
+
+.tarjeta-electrica h3 {
+    color: var(--fondos);
+}
+
+
+/* ==================================================
+   6. TABLAS Y ETIQUETA NUEVO
+   ================================================== */
 
 table {
     width: 100%;
@@ -48,109 +218,25 @@ th {
     color: var(--fondos);
 }
 
-a {
-    text-decoration: none;
-    color: var(--texto-principal);
-    text-decoration: none;
-    font-weight: bold;
+.new-container {
+    position: relative;
 }
 
-li {
-    list-style-type: none;
-}
-
-a:focus,
-input:focus,
-textarea:focus,
-select:focus,
-button:focus {
-    outline: solid 2px var(--enlaces);
-    border-radius: 3px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: var(--fuente-titulos);
-    color: var(--texto-principal);
-}
-
-
-/*
-#portada {
-    min-height: 45vh;
-}
-*/
-
-.lista-menu .activo {
-    color: var(--enlaces);
-    font-weight: 700;
-}
-
-.lista-menu li {
-    color: var(--texto-principal);
-}
-
-.lista-menu a:focus {
-    outline: 2px solid var(--enlaces);
-    outline-offset: 1px;
-    border-radius: 3px;
-}
-
-.lista-menu a:hover {
-    color: var(--enlaces);
-    font-weight: 800;
-}
-
-.reserva {
-    width: var(--espaciado-mediano);
-    height: var(--espaciado-mediano);
-    padding: 4px;
-    background-color: var(--botones-principales);
-    color: var(--fondos);
-    box-sizing: border-box;
-    border-radius: 2px;
-}
-
-.reserva:hover {
-    background-color: var(--botones-secundarios);
-}
-
-.reserva:focus {
-    color: var(--texto-principal);
-    outline: solid 2px var(--texto-principal);
-}
-
-#tarjeta-contenedor {
-    display: flex;
-}
-
-#tarjeta-contenedor a {
-    color: var(--botones-secundarios);
-}
-
-#tarjeta-contenedor h3 {
-    margin: auto;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-.tarjeta {
-    padding: var(--espaciado-pequeño);
-    margin: var(--espaciado-pequeño);
-    border-radius: 15px;
+#new {
+    position: absolute;
+    padding: 0.3rem;
+    right: 0.3rem;
+    bottom: 0.2rem;
     background-color: var(--texto-principal);
     color: var(--fondos);
-    box-shadow: 0 0 8px var(--texto-principal);
-    flex: 1;
+    font-weight: bold;
+    border-radius: 4px;
 }
 
-.tarjeta img {
-    width: 100%;
-}
+
+/* ==================================================
+   7. FORMULARIO
+   ================================================== */
 
 input,
 select,
@@ -159,26 +245,15 @@ textarea {
     width: 100%;
 }
 
-
-#planes-contenedor input {
-    display: block;
-    width: inherit;
-}
-
-form #confirm {
-    width: inherit;
-}
-
 form {
     padding: var(--espaciado-grande);
-    box-shadow: 0 0 8px #5B6470;
+    box-shadow: 0 0 8px var(--texto-secundario);
     border-radius: 15px;
 }
 
 form button {
     padding: 16px 32px;
     margin-top: var(--espaciado-pequeño);
-
     font-size: var(--espaciado-mediano);
     font-weight: 600;
     color: var(--fondos);
@@ -196,13 +271,6 @@ form fieldset {
     border: none;
 }
 
-#planes-contenedor {
-    padding-top: var(--espaciado-pequeño);
-    margin-bottom: var(--espaciado-pequeño);
-    border-radius: 8px;
-}
-
-
 legend {
     background-color: var(--texto-principal);
     color: var(--fondos);
@@ -211,22 +279,39 @@ legend {
     border-radius: 3px;
 }
 
+#planes-contenedor {
+    padding-top: var(--espaciado-pequeño);
+    margin-bottom: var(--espaciado-pequeño);
+    border-radius: 8px;
+}
+
+#planes-contenedor input {
+    width: inherit;
+}
+
 #planes-contenedor legend {
     background-color: var(--texto-secundario);
 }
 
-.menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+form #confirm {
+    width: inherit;
 }
 
-.lista-menu {
-    display: flex;
-    gap: var(--espaciado-pequeño);
-    padding-left: initial;
+
+/* ==================================================
+   8. BOTÓN FLOTANTE DE WHATSAPP
+   ================================================== */
+
+.whatsapp {
+    position: fixed;
+    bottom: var(--espaciado-mediano);
+    right: var(--espaciado-pequeño);
 }
 
-.contenedor-lista-menu {
-    margin-right: var(--espaciado-mediano);
+.whatsapp a {
+    color: var(--fondos);
+}
+
+.whatsapp img {
+    width: 4rem;
 }

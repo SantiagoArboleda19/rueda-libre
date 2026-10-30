@@ -27,6 +27,7 @@ body {
     font-family: var(--fuente-textos);
     color: var(--texto-secundario);
     background-color: var(--fondos);
+    margin: var(--espaciado-pequeño) 0px 0px 0px;
 }
 
 main {
@@ -75,16 +76,32 @@ button:focus {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: var(--texto-principal);
+    border-radius: 15px;
+}
+
+.menu div {
+    margin-left: var(--espaciado-mediano);
+}
+
+.menu h1 {
+    color: var(--fondos);
 }
 
 .lista-menu {
     display: flex;
     gap: var(--espaciado-pequeño);
     padding-left: initial;
+    flex-wrap: wrap;
 }
 
 .lista-menu li {
-    color: var(--texto-principal);
+    list-style-type: none;
+}
+
+.lista-menu a {
+    color: var(--fondos);
     list-style-type: none;
 }
 
@@ -108,6 +125,39 @@ button:focus {
     margin-right: var(--espaciado-mediano);
 }
 
+/* ==================================================
+   SECCIONES INICIO 
+   ================================================== */
+.nav-seccion {
+    background-color: var(--texto-principal);
+    max-width: 80%;
+    margin: auto;
+    margin-top: var(--espaciado-pequeño);
+    padding: var(--espaciado-mediano);
+    border-radius: 17px;
+}
+
+.seccion {
+    display: flex;
+    gap: var(--espaciado-mediano);
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-left: 0px;
+}
+
+.seccion li {
+    list-style: none;
+}
+
+.seccion a {
+    font-size: large;
+    font-weight: bolder;
+    color: var(--fondos);
+}
+
+/* ==================================================
+   PORTADA 
+   ================================================== */
 
 /* ==================================================
    4. BOTONES DE RESERVA
@@ -115,7 +165,7 @@ button:focus {
 
 .reserva {
     display: inline-block;
-    padding: 4px;
+    padding: var(--espaciado-mediano);
     background-color: var(--botones-principales);
     color: var(--fondos);
     border-radius: 17px;
@@ -316,4 +366,23 @@ form #confirm {
 
 .whatsapp img {
     width: 4rem;
+}
+
+/* ==================================================
+   9. BOTÓN FLOTANTE DE WHATSAPP
+   ================================================== */
+
+footer {
+    background-color: #14213D;
+    margin-top: var(--espaciado-mediano);
+    padding: 0px;
+    color: #FAF6EF;
+    display: flex;
+    justify-content: space-around;
+    min-height: 7rem;
+    align-items: center;
+}
+
+footer p {
+    font-weight: bolder;
 }

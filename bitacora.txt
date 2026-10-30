@@ -359,3 +359,13 @@ Tarjeta : input#date-reservation
 Antes: 1114.23 x 20.9833
 
 Despues: 1108 x 20.9833
+
+MINIRETO 13 ----------------------------------------------------------------------------------------
+
+Se redujo progresivamente el ancho de la ventana del navegador para comprobar la adaptación del encabezado y el pie de página.
+
+Encabezado: El nombre del negocio permanece en un extremo y el menú en el otro. Cuando disminuye el espacio, los enlaces pasan automáticamente a otra línea.
+
+Pie de página: Los tres bloques (marca, contacto y horario) permanecen organizados en fila mientras hay espacio suficiente. Al reducir la ventana, pueden reorganizarse según el espacio disponible.
+
+Conclusión: Flexbox permite adaptar la distribución de los elementos a diferentes tamaños de pantalla, mejorando el diseño responsive.

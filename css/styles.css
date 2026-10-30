@@ -93,7 +93,7 @@ button:focus {
     display: flex;
     gap: var(--espaciado-pequeño);
     padding-left: initial;
-    flex-wrap: wrap;
+    flex-wrap: wrap
 }
 
 .lista-menu li {
@@ -128,6 +128,7 @@ button:focus {
 /* ==================================================
    SECCIONES INICIO 
    ================================================== */
+
 .nav-seccion {
     background-color: var(--texto-principal);
     max-width: 80%;
@@ -158,6 +159,13 @@ button:focus {
 /* ==================================================
    PORTADA 
    ================================================== */
+
+#portada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: var(--espaciado-mediano);
+}
 
 /* ==================================================
    4. BOTONES DE RESERVA
@@ -246,6 +254,52 @@ button:focus {
 
 .tarjeta-electrica h3 {
     color: var(--fondos);
+}
+
+/* ==================================================
+   NUESTRA FLOTA
+   ================================================== */
+
+.nuestra-flota {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
+    gap: var(--espaciado-pequeño);
+}
+
+.nuestra-flota figure {
+    margin: 0;
+}
+
+.nuestra-flota img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.tarjeta-flota {
+    display: flex;
+    flex-direction: column;
+}
+
+.flota-descripcion {
+    display: flex;
+    flex-direction: column;
+}
+
+.flota-precio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.flota-precio p {
+    background-color: var(--fondos);
+    color: var(--texto-principal);
+    padding: var(--espaciado-pequeño) 5rem;
+    border-radius: 15px;
+    box-shadow: 0 0 4px var(--fondos);
+    font-weight: 900;
 }
 
 

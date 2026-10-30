@@ -369,3 +369,10 @@ Encabezado: El nombre del negocio permanece en un extremo y el menú en el otro.
 Pie de página: Los tres bloques (marca, contacto y horario) permanecen organizados en fila mientras hay espacio suficiente. Al reducir la ventana, pueden reorganizarse según el espacio disponible.
 
 Conclusión: Flexbox permite adaptar la distribución de los elementos a diferentes tamaños de pantalla, mejorando el diseño responsive.
+
+
+MINIRETO 14 ------------------------------------------------------------------
+
+Con 1280px: 3 columnas.
+Con 1280px: 2 columnas.
+Con 1280px: 3 columnas.

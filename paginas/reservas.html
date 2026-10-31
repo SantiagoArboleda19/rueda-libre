@@ -1,24 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
     <meta name="description" content="Pagina para hacer las reservas">
     <title>Rueda Libre | Reservas</title>
 </head>
+
 <body>
-    <header>
-        <h1>Rueda Libre</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="tarifas.html">Tarifas y rutas</a></li>
-                <li><a href="reservas.html">Reservas</a></li>
-            </ul>
-        </nav>
+    <header class="menu">
+        <div>
+            <h1 id="h1">Rueda Libre</h1>
+        </div>
+        <div class="contenedor-lista-menu">
+            <nav>
+                <ul class="lista-menu">
+                    <li>
+                        <a href="../index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="tarifas.html">Tarifas y rutas</a>
+                    </li>
+                    <li>
+                        <a href="reservas.html" class="activo">Reservas</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
+        <figure>
+            <img src="../img/portada.jpg" alt="Una rueda libre" width="300px">
+        </figure>
+
         <a href="mailto:hola@ruedalibre.example">
             Escríbenos
         </a>
@@ -37,30 +59,32 @@
         </section>
 
         <section>
-            <form method="post">
+            <form id="formulario" method="post">
                 <fieldset>
                     <legend>Tus datos</legend>
+
 
                     <label for="name">Nombre Completo:</label>
                     <input type="text" id="name" name="nombre_completo" minlength="3" required>
 
                     <label for="identity">Identificación:</label>
-                    <input type="text" id="identity" name="identificacion" inputmode="numeric" 
-                    pattern="[0-9]{6,10}" title="Minimo 6 digitos, maximo 6. Solo numeros, del 0 al 9" required>
+                    <input type="text" id="identity" name="identificacion" inputmode="numeric" pattern="[0-9]{6,10}"
+                        title="Minimo 6 digitos, maximo 6. Solo numeros, del 0 al 9" required>
 
                     <label for="email">Correo Electronico:</label>
-                    <input type="email" id="email" name="correo_electronico" required> 
+                    <input type="email" id="email" name="correo_electronico" required>
 
                     <label for="phone">Telefono:</label>
-                    <input type="tel" id="phone" name="telefono"  inputmode="numeric" 
-                    pattern="3[0-9]{9}"" title="El numero debe iniciar por 3 y tener 10 digitos">
+                    <input type="tel" id="phone" name="telefono" inputmode="numeric" pattern="3[0-9]{9}"" title=" El
+                        numero debe iniciar por 3 y tener 10 digitos">
                 </fieldset>
 
                 <fieldset>
                     <legend>Tu reserva</legend>
 
                     <label for="date-reservation">Fecha del alquiler</label>
-                    <input type="date" id="date-reservation" name="fecha_alquiler" min="2026-11-01" max="2026-12-31" required>
+                    <input type="date" id="date-reservation" name="fecha_alquiler" min="2026-11-01" max="2026-12-31"
+                        required>
 
                     <label for="kind">Tipo de bicicleta</label>
                     <select name="tipo_bicicleta" id="kind">
@@ -70,17 +94,18 @@
                         <option value="electrical">Electrica</option>
                     </select>
 
-                    <fieldset>
+                    <fieldset id="planes-contenedor">
                         <legend>Planes</legend>
+                        <div>
+                            <input type="radio" id="onehour" value="onehour" name="plan">
+                            <label for="onehour">1 hora</label>
 
-                        <input type="radio" id="onehour" value="onehour" name="plan">
-                        <label for="onehour">1 hora</label>
+                            <input type="radio" id="mediumday" value="mediumday" name="plan">
+                            <label for="mediumday">Medio dia (4 horas)</label>
 
-                        <input type="radio" id="mediumday" value="mediumday" name="plan">
-                        <label for="mediumday">Medio dia (4 horas)</label>
-
-                        <input type="radio" id="allday" value="allday" name="plan">
-                        <label for="allday">Dia completo</label>
+                            <input type="radio" id="allday" value="allday" name="plan">
+                            <label for="allday">Dia completo</label>
+                        </div>
                     </fieldset>
 
                     <label for="quantity">Cantidad de bicicletas</label>
@@ -105,10 +130,18 @@
                     <input type="checkbox" id="confirm" name="acepta_politicas" value="si" required>
                 </fieldset>
 
-                <button type="submit" name="enviar" value="enviar">Enviar</button>
+                <div id="contenedor-boton">
+                    <button type="submit" name="enviar" value="enviar">Enviar</button>
+                </div>
             </form>
         </section>
     </main>
+
+    <div class="whatsapp">
+        <a href="https://wa.me/573000000000" target="_blank">
+            <img src="../img/WhatsApp_icon-removebg-preview.png" alt="">
+        </a>
+    </div>
 
     <footer>
         <p>Rueda Libre</p>
@@ -116,4 +149,5 @@
         <p>2026</p>
     </footer>
 </body>
+
 </html>

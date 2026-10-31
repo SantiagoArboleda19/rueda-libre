@@ -131,7 +131,7 @@ button:focus {
 
 .nav-seccion {
     background-color: var(--texto-principal);
-    max-width: 80%;
+    max-width: 90%;
     margin: auto;
     margin-top: var(--espaciado-pequeño);
     padding: var(--espaciado-mediano);
@@ -156,15 +156,32 @@ button:focus {
     color: var(--fondos);
 }
 
+.seccion a:hover {
+    color: var(--botones-secundarios);
+}
+
 /* ==================================================
    PORTADA 
    ================================================== */
 
 #portada {
+    margin-bottom: var(--espaciado-mediano);
+}
+
+.contenedor-portada {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.contenedor-portada img {
+    min-width: 100%;
+}
+
+.descripcion-portada {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-bottom: var(--espaciado-mediano);
 }
 
 /* ==================================================
@@ -209,7 +226,7 @@ button:focus {
     border-radius: 15px;
     background-color: var(--texto-principal);
     color: var(--fondos);
-    box-shadow: 0 0 8px var(--texto-principal);
+    box-shadow: 0 0 10px var(--texto-principal);
 }
 
 .tarjeta img {
@@ -220,10 +237,19 @@ button:focus {
     margin: auto;
     text-align: center;
     color: #FFFFFF;
+    padding: var(--espaciado-mediano) 0px;
 }
 
 .tarjeta a {
     color: var(--botones-secundarios);
+}
+
+.tarjeta p {
+    margin: var(--espaciado-pequeño) auto;
+}
+
+.tarjeta:hover {
+    box-shadow: none;
 }
 
 .tarjeta-nuevo {
@@ -255,6 +281,36 @@ button:focus {
 .tarjeta-electrica h3 {
     color: var(--fondos);
 }
+
+/* ==================================================
+   NUEVAS RUTAS
+   ================================================== */
+
+.rutas-contenedor {
+    display: flex;
+}
+
+.rutas-contenedor figure {
+    margin: 0;
+}
+
+.rutas-contenedor img {
+    border-radius: 15px;
+}
+
+.rutas-contenedor h3 {
+    color: var(--texto-principal);
+}
+
+.rutas-contenedor p {
+    color: var(--texto-secundario);
+    font-weight: 600;
+}
+
+.rutas-tarjeta {
+    background-color: #f5f5f5;
+}
+
 
 /* ==================================================
    NUESTRA FLOTA
@@ -383,6 +439,10 @@ legend {
     padding: 0.2rem var(--espaciado-pequeño);
     margin: 0.2rem;
     border-radius: 3px;
+}
+
+form input {
+    padding: var(--espaciado-pequeño);
 }
 
 #planes-contenedor {

@@ -298,7 +298,7 @@ button:focus {
 .flota-precio p {
     background-color: var(--fondos);
     color: var(--texto-principal);
-    padding: var(--espaciado-mediano) 7rem;
+    padding: var(--espaciado-mediano) 5rem;
     margin: auto var(--espaciado-mediano);
     border-radius: 15px;
     box-shadow: 0 0 3px var(--fondos);
@@ -341,6 +341,7 @@ button:focus {
    ================================================== */
 .lista-beneficios{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     background-color: var(--texto-principal);
     padding: var(--espaciado-grande);
@@ -525,7 +526,7 @@ form #confirm {
 footer {
     background-color: #14213D;
     margin-top: var(--espaciado-mediano);
-    padding: 0px;
+    padding: 0px var(--espaciado-grande);
     color: #FAF6EF;
     display: flex;
     justify-content: space-around;

@@ -216,27 +216,22 @@ button:focus {
    5. TARJETAS DE SERVICIOS
    ================================================== */
 
-#servicios-contenedor {
-    display: flex;
-    flex-direction: column;
-}
-
-#tarjeta-contenedor {
-    display: flex;
-}
-
 .tarjeta {
-    flex: 1;
     padding: var(--espaciado-pequeño);
-    margin: var(--espaciado-pequeño);
+    margin: var(--espaciado-grande) var(--espaciado-pequeño);
     border-radius: 15px;
     background-color: var(--texto-principal);
     color: var(--fondos);
     box-shadow: 0 0 10px var(--texto-principal);
 }
 
+.tarjeta figure {
+    margin: 0px;
+}
+
 .tarjeta img {
     width: 100%;
+    border-radius: 15px;
 }
 
 .tarjeta h3 {
@@ -244,10 +239,6 @@ button:focus {
     text-align: center;
     color: #FFFFFF;
     padding: var(--espaciado-mediano) 0px;
-}
-
-.tarjeta a {
-    color: var(--botones-secundarios);
 }
 
 .tarjeta p {
@@ -259,7 +250,6 @@ button:focus {
 }
 
 .tarjeta-nuevo {
-    display: flex;
     position: relative;
 }
 
@@ -273,38 +263,57 @@ button:focus {
     border-radius: 5px;
 }
 
-.tarjeta-electrica {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: var(--espaciado-grande);
+
+/* ==================================================
+   NUESTRA FLOTA
+   ================================================== */
+
+.nuestra-flota figure {
+    margin: 0;
 }
 
-.imagen-electrica figure {
-    margin: var(--espaciado-pequeño);
-}
-
-.imagen-electrica img {
+.nuestra-flota img {
+    max-width: 100%;
     border-radius: 15px;
 }
 
-.imagen-electrica {
-    min-width: 33%;
+.tarjeta-flota {
+    display: flex;
+    flex-direction: column;
 }
 
-.tarjeta-electrica h3 {
-    margin: initial;
-    color: var(--fondos);
+.flota-descripcion {
+    display: flex;
+    flex-direction: column;
+}
+
+.flota-precio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: var(--espaciado-mediano);
+}
+
+.flota-precio p {
+    background-color: var(--fondos);
+    color: var(--texto-principal);
+    padding: var(--espaciado-mediano) 7rem;
+    margin: auto var(--espaciado-mediano);
+    border-radius: 15px;
+    box-shadow: 0 0 3px var(--fondos);
+    font-weight: 900;
+}
+
+.flota-precio a {
+    color: var(--botones-secundarios);
+    font-size: larger;
+    font-weight: bolder;
 }
 
 /* ==================================================
    NUEVAS RUTAS
    ================================================== */
-
-.rutas-contenedor {
-    display: flex;
-    flex-wrap: wrap;
-}
 
 .rutas-contenedor figure {
     margin: 0;
@@ -327,53 +336,40 @@ button:focus {
     background-color: #f5f5f5;
 }
 
+/* ==================================================
+   BENEFICIOS
+   ================================================== */
+.lista-beneficios{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--texto-principal);
+    padding: var(--espaciado-grande);
+    color: var(--fondos);
+    font-weight: bolder;
+}
+
+.lista-beneficios li {
+    list-style-type: none;
+}
 
 /* ==================================================
-   NUESTRA FLOTA
+   ENCUENTRANOS O CONTACTANOS
    ================================================== */
 
-.nuestra-flota {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
-    gap: var(--espaciado-pequeño);
-}
-
-.nuestra-flota figure {
-    margin: 0;
-}
-
-.nuestra-flota img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 15px;
-}
-
-.tarjeta-flota {
+.contenedor-encuentranos {
     display: flex;
     flex-direction: column;
-}
-
-.flota-descripcion {
-    display: flex;
-    flex-direction: column;
-}
-
-.flota-precio {
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-around;
 }
 
-.flota-precio p {
-    background-color: var(--fondos);
-    color: var(--texto-principal);
-    padding: var(--espaciado-pequeño) 5rem;
-    border-radius: 15px;
-    box-shadow: 0 0 4px var(--fondos);
-    font-weight: 900;
+.contenedor-encuentranos figure{
+    margin-top: 0px;
 }
 
+.encuentranos-enlasces {
+    display: flex;
+    gap: var(--espaciado-grande);
+}
 
 /* ==================================================
    6. TABLAS Y ETIQUETA NUEVO

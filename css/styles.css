@@ -27,7 +27,8 @@ body {
     font-family: var(--fuente-textos);
     color: var(--texto-secundario);
     background-color: var(--fondos);
-    margin: var(--espaciado-pequeño) 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    position: relative;
 }
 
 main {
@@ -48,6 +49,11 @@ h5,
 h6 {
     font-family: var(--fuente-titulos);
     color: var(--texto-principal);
+    margin-left: var(--espaciado-mediano);
+}
+
+p {
+    margin-left: var(--espaciado-pequeño);
 }
 
 a {
@@ -71,22 +77,21 @@ button:focus {
    ================================================== */
 
 .menu {
-    margin: auto;
-    max-width: 75rem;
+    margin: 0px;
+    max-width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
     background-color: var(--texto-principal);
-    border-radius: 15px;
-}
-
-.menu div {
-    margin-left: var(--espaciado-mediano);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .menu h1 {
     color: var(--fondos);
+    margin: var(--espaciado-pequeño) 0px 0px 0px;
 }
 
 .lista-menu {
@@ -102,7 +107,6 @@ button:focus {
 
 .lista-menu a {
     color: var(--fondos);
-    list-style-type: none;
 }
 
 .lista-menu .activo {
@@ -121,9 +125,7 @@ button:focus {
     border-radius: 3px;
 }
 
-.contenedor-lista-menu {
-    margin-right: var(--espaciado-mediano);
-}
+
 
 /* ==================================================
    SECCIONES INICIO 
@@ -164,14 +166,13 @@ button:focus {
    PORTADA 
    ================================================== */
 
-#portada {
-    margin-bottom: var(--espaciado-mediano);
-}
-
 .contenedor-portada {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
+    grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.contenedor-portada figure {
+    margin: 0px;
 }
 
 .contenedor-portada img {
@@ -183,7 +184,10 @@ button:focus {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+}
+
+.descripcion-portada p {
+    text-align: center;
 }
 
 /* ==================================================

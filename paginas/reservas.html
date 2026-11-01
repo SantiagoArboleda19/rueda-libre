@@ -37,9 +37,27 @@
     </header>
 
     <main>
-        <figure>
-            <img src="../img/portada.jpg" alt="Una rueda libre" width="300px">
-        </figure>
+        <section id="portada">
+            <div class="contenedor-portada">
+                <div>
+                    <figure>
+                        <img src="../img/portada.jpeg" alt="Imagen portada de una rueda libre" width="300px">
+                    </figure>
+                </div>
+
+                <div class="descripcion-portada">
+                    <p>
+                        Bienvenido a Rueda Libre.
+                        <a href="#encuentranos">Encuéntranos</a>
+                        y descubre nuestros servicios.
+                    </p>
+
+                    <div>
+                        <a class="reserva" href="paginas/reservas.html">RESERVA AHORA</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <a href="mailto:hola@ruedalibre.example">
             Escríbenos
@@ -60,26 +78,39 @@
 
         <section>
             <form id="formulario" method="post">
-                <fieldset>
+                <h2>INGRESA LOS DATOS PARA RESERVAR</h2>
+                <fieldset class="seccion-formulario">
                     <legend>Tus datos</legend>
+                    <div class="seccion-tusdatos">
+                        <div class="subseccion-tusdatos">
+                            <div>
+                                <label for="name">Nombre Completo:</label>
+                                <input type="text" id="name" name="nombre_completo" minlength="3" required>
+                            </div>
 
-
-                    <label for="name">Nombre Completo:</label>
-                    <input type="text" id="name" name="nombre_completo" minlength="3" required>
-
-                    <label for="identity">Identificación:</label>
-                    <input type="text" id="identity" name="identificacion" inputmode="numeric" pattern="[0-9]{6,10}"
-                        title="Minimo 6 digitos, maximo 6. Solo numeros, del 0 al 9" required>
-
-                    <label for="email">Correo Electronico:</label>
-                    <input type="email" id="email" name="correo_electronico" required>
-
-                    <label for="phone">Telefono:</label>
-                    <input type="tel" id="phone" name="telefono" inputmode="numeric" pattern="3[0-9]{9}"" title=" El
-                        numero debe iniciar por 3 y tener 10 digitos">
+                            <div>
+                                <label for="identity">Identificación:</label>
+                                <input type="text" id="identity" name="identificacion" inputmode="numeric" pattern="[0-9]{6,10}"
+                                title="Minimo 6 digitos, maximo 6. Solo numeros, del 0 al 9" required>
+                            </div>
+                            
+                        </div>
+                        <div class="subseccion-tusdatos">
+                            <div>
+                                <label for="email">Correo Electronico:</label>
+                                <input type="email" id="email" name="correo_electronico" required>
+                            </div>
+                            
+                            <div>
+                                <label for="phone">Telefono:</label>
+                                <input type="tel" id="phone" name="telefono" inputmode="numeric" pattern="3[0-9]{9}"" title=" El
+                                    numero debe iniciar por 3 y tener 10 digitos">
+                            </div>
+                        </div>
+                    </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="seccion-formulario">
                     <legend>Tu reserva</legend>
 
                     <label for="date-reservation">Fecha del alquiler</label>
@@ -94,7 +125,7 @@
                         <option value="electrical">Electrica</option>
                     </select>
 
-                    <fieldset id="planes-contenedor">
+                    <fieldset class="seccion-formulario input-forma" id="planes-contenedor">
                         <legend>Planes</legend>
                         <div>
                             <input type="radio" id="onehour" value="onehour" name="plan">
@@ -123,7 +154,7 @@
                     <textarea name="comentarios" id="coments" maxlength="300"></textarea>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="seccion-formulario input-forma">
                     <legend>Confirmación</legend>
 
                     <label for="confirm">¿Aceptas las politicas de alquiler?</label>

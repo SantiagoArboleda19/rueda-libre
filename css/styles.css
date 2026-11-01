@@ -170,7 +170,8 @@ button:focus {
 
 .contenedor-portada {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
 }
 
 .contenedor-portada img {
@@ -182,6 +183,7 @@ button:focus {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 /* ==================================================
@@ -270,8 +272,16 @@ button:focus {
 .tarjeta-electrica {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    gap: var(--espaciado-grande);
+}
+
+.imagen-electrica figure {
+    margin: var(--espaciado-pequeño);
+}
+
+.imagen-electrica img {
+    border-radius: 15px;
 }
 
 .imagen-electrica {
@@ -279,6 +289,7 @@ button:focus {
 }
 
 .tarjeta-electrica h3 {
+    margin: initial;
     color: var(--fondos);
 }
 
@@ -288,6 +299,7 @@ button:focus {
 
 .rutas-contenedor {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .rutas-contenedor figure {
@@ -389,7 +401,7 @@ th {
     padding: 0.3rem;
     right: 0.3rem;
     bottom: 0.2rem;
-    background-color: var(--texto-principal);
+    background-color: var(--elementos-decorativos);
     color: var(--fondos);
     font-weight: bold;
     border-radius: 4px;
@@ -405,18 +417,48 @@ select,
 textarea {
     display: block;
     width: 100%;
+    padding: var(--espaciado-pequeño);
+    margin-top: var(--espaciado-pequeño);
+}
+
+label {
+    margin: var(--espaciado-pequeño) 0px 0px var(--espaciado-pequeño);
+}
+
+.input-forma label{
+    margin: var(--espaciado-pequeño) 0px 0px 0px;
 }
 
 form {
     padding: var(--espaciado-grande);
     box-shadow: 0 0 8px var(--texto-secundario);
     border-radius: 15px;
+    margin: 0px var(--espaciado-pequeño);
+}
+
+form h2{
+    margin-top: 0px;
+}
+
+.seccion-tusdatos {
+    display: flex;
+    flex-direction: column;
+}
+
+.subseccion-tusdatos {
+    display: flex;
+    gap: var(--espaciado-pequeño);
+    flex-wrap: wrap;
+}
+
+.subseccion-tusdatos div{
+    flex: 1;
 }
 
 form button {
     padding: 16px 32px;
     margin-top: var(--espaciado-pequeño);
-    font-size: var(--espaciado-mediano);
+    font-size: 1.2rem;
     font-weight: 600;
     color: var(--fondos);
     background-color: var(--texto-principal);
@@ -425,12 +467,10 @@ form button {
     cursor: pointer;
 }
 
-form fieldset {
-    padding-top: var(--espaciado-grande);
+.seccion-formulario {
+    padding-top: var(--espaciado-mediano);
     margin-bottom: var(--espaciado-grande);
-    box-shadow: 0 0 var(--espaciado-pequeño) var(--texto-principal);
     border-radius: 10px;
-    border: none;
 }
 
 legend {
@@ -441,13 +481,9 @@ legend {
     border-radius: 3px;
 }
 
-form input {
-    padding: var(--espaciado-pequeño);
-}
-
 #planes-contenedor {
     padding-top: var(--espaciado-pequeño);
-    margin-bottom: var(--espaciado-pequeño);
+    margin: var(--espaciado-pequeño) 0px;
     border-radius: 8px;
 }
 

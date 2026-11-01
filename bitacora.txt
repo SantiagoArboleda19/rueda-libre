@@ -275,9 +275,104 @@ AUDITORIA MINIRETO 8------------------------------------------------------------
 
 Pirmer hallazgo: Etiquetas img sin un correcto alt.
     Corrección: Se modifica el alt de las etiquetas img importantes y se deja alt vacio para las img no importantes.
-    Segundo hallazgo: Incorrecta jerarquia de encabezados pasando de h1 a h3 directamente.
+Segundo hallazgo: Incorrecta jerarquia de encabezados pasando de h1 a h3 directamente.
     Corrección: Jerearquia de encabezados h1 -> h2 -> h3.
 
-PALETA DE COLORES MINIRETO 8------------------------------------------------------------------
-Texto blanco(FFFFFF) sobre Verde Ruta(00694C): Contrast Ratio -> 6.72:1 APTA PARA TEXTO NORMAL Y GRANDE.
-blanco(FFFFFF) sobre Naranja Pedal(FF6600): Contrast Ratio -> 2.93:1
+Minireto 8: Contraste y mapa de uso del color
+1. Clasificación de las combinaciones de color
+
+Según los criterios de accesibilidad WCAG nivel AA, las combinaciones se clasifican de la siguiente manera:
+
+    Blanco (#FFFFFF) sobre Verde Ruta (#1E7A4F): ratio de 5.31:1. Apta para texto normal y grande.
+    Blanco (#FFFFFF) sobre Naranja Pedal (#F39A2B): ratio de 2.22:1. No apta para texto normal ni grande.
+    Azul Noche (#14213D) sobre Naranja Pedal (#F39A2B): ratio de 7.20:1. Apta para texto normal y grande.
+    Azul Noche (#14213D) sobre Crema (#FAF6EF): ratio de 14.83:1. Apta para texto normal y grande.
+    Gris Asfalto (#5B6470) sobre Crema (#FAF6EF): ratio de 5.57:1. Apta para texto normal y grande.
+    Verde Ruta (#1E7A4F) sobre Crema (#FAF6EF): ratio de 4.93:1. Apta para texto normal y grande.
+    Naranja Pedal (#F39A2B) sobre Crema (#FAF6EF): ratio de 2.06:1. No apta para texto normal ni grande.
+    Blanco (#FFFFFF) sobre Azul Noche (#14213D): ratio de 15.97:1. Apta para texto normal y grande.
+
+Conclusión: seis combinaciones son aptas para texto normal y grande, y dos no son aptas para texto de ningún tamaño según el nivel AA.
+2. Mapa de uso del color
+
+    Texto principal: utilizaré Azul Noche (#14213D) sobre el fondo Crema (#FAF6EF), porque ofrece un contraste de 14.83:1 y
+    facilita la lectura.
+    Texto secundario: utilizaré Gris Asfalto (#5B6470) sobre Crema (#FAF6EF), con un contraste de 5.57:1.
+    Fondos: utilizaré Crema (#FAF6EF) como fondo general de la página, porque es un color suave que permite combinarse con textos
+    oscuros y mantener una buena legibilidad.
+    Botones principales: utilizaré Verde Ruta (#1E7A4F) con texto blanco (#FFFFFF), ya que su contraste es de 5.31:1 y cumple los
+    requisitos para texto normal.
+    Botones secundarios: utilizaré Naranja Pedal (#F39A2B) con texto Azul Noche (#14213D), porque su contraste de 7.20:1 garantiza
+    una buena legibilidad.
+    Enlaces: utilizaré Verde Ruta (#1E7A4F) sobre el fondo Crema (#FAF6EF), con un contraste de 4.93:1. Además, los enlaces tendrán
+    un subrayado para que puedan identificarse sin depender únicamente del color.
+    Destacados: utilizaré Naranja Pedal (#F39A2B) en elementos decorativos, etiquetas y detalles visuales. Evitaré utilizarlo como 
+    texto sobre Crema o con texto blanco, ya que esas combinaciones no alcanzan el contraste mínimo requerido.
+
+3. Reflexión final
+
+La comprobación del contraste me permitió identificar qué combinaciones de colores son accesibles y cuáles debo evitar.
+Aprendí que no basta con elegir colores que se vean bien juntos, sino que también deben facilitar la lectura y la navegación.
+
+Por eso, utilizaré Azul Noche y Gris Asfalto para los textos, Crema para los fondos, Verde Ruta para los botones principales y 
+los enlaces, y Naranja Pedal para los botones secundarios y los elementos destacados. De esta manera, mantendré una identidad 
+visual coherente y mejoraré la accesibilidad de Minireto 8.
+
+GITHUB PAGE: https://santiagoarboleda19.github.io/rueda-libre/
+
+HERENCIA MINIRETO9----------------------------------------------------------------------------------------------------------------
+
+Las variables heredadas son las siguientes:
+    font-family: var(--fuente-textos);
+    color: var(--texto-secundario);
+La variable que no se hereda es la siguiente:
+    background-color: var(--fondos);
+
+
+ESPECIFICIDAD MINIRETO10---------------------------------------------------------------------------------------------------------
+
+Usa DevTools para descubrir por qué la clase no se aplica. Registra en la bitácora la especificidad de cada selector y la causa del 
+problema.
+
+(1,0,1)
+#menu a {
+    color: var(--texto-secundario); 
+}
+
+(0,1,0)
+.activo {
+    color: var(--enlaces);
+    font-weight: 600; 
+}
+
+El problema esta en que el primer selector tiene mayor especificidad que el segundo selector por lo tanto se aplica el color
+para textos en lugar que el color para los enlaces. En mi codigo espicificamente se elimina el primer selector ya que el color para
+textos ya se hereda desde el cuerpo (body).
+
+MEDIDAD MINITERO 11-------------------------------------------------------------------------------------------------
+
+Mide en DevTools (Computed) el ancho total de una tarjeta antes y después de cambiar box-sizing y registra ambos
+valores en la bitácora. Haz commit y push.
+
+Tarjeta : input#date-reservation 
+
+Antes: 1114.23 x 20.9833
+
+Despues: 1108 x 20.9833
+
+MINIRETO 13 ----------------------------------------------------------------------------------------
+
+Se redujo progresivamente el ancho de la ventana del navegador para comprobar la adaptación del encabezado y el pie de página.
+
+Encabezado: El nombre del negocio permanece en un extremo y el menú en el otro. Cuando disminuye el espacio, los enlaces pasan automáticamente a otra línea.
+
+Pie de página: Los tres bloques (marca, contacto y horario) permanecen organizados en fila mientras hay espacio suficiente. Al reducir la ventana, pueden reorganizarse según el espacio disponible.
+
+Conclusión: Flexbox permite adaptar la distribución de los elementos a diferentes tamaños de pantalla, mejorando el diseño responsive.
+
+
+MINIRETO 14 ------------------------------------------------------------------
+
+Con 1280px: 3 columnas.
+Con 1280px: 2 columnas.
+Con 1280px: 3 columnas.

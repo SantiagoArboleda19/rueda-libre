@@ -315,6 +315,7 @@ button:focus {
 }
 
 .rutas-contenedor img {
+    width: 100%;
     border-radius: 15px;
 }
 
@@ -580,4 +581,105 @@ footer {
 
 footer p {
     font-weight: bolder;
+}
+
+/* =========================================
+   TABLETAS: desde 768px
+========================================= */
+
+@media (min-width: 768px) {
+
+    main {
+    max-width: 75rem;
+    }
+
+    /* MENÚ */
+    .menu {
+        flex-direction: row;
+        padding: var(--espaciado-pequeño) var(--espaciado-grande);
+    }
+
+    .lista-menu {
+        gap: var(--espaciado-mediano);
+    }
+
+    /* PORTADA */
+    .contenedor-portada {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: var(--espaciado-mediano);
+    }
+
+    /* SERVICIOS */
+    .tarjeta-contenedor {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));  
+        gap: var(--espaciado-pequeño);
+    }
+
+    .tarjeta {
+        margin: var(--espaciado-pequeño) var(--espaciado-pequeño);
+    }
+
+    /* NUESTRA FLOTA */
+    .nuestra-flota {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));       
+        gap: var(--espaciado-pequeño);
+    }
+
+    /* RUTAS */
+    .rutas-contenedor {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));      
+        gap: var(--espaciado-mediano);
+    }
+
+    /* FORMULARIO */
+    form {
+        max-width: 750px;
+        margin: auto;
+    }
+}
+
+/* =========================================
+   ESCRITORIO: desde 1200px
+========================================= */
+
+@media (min-width: 1200px) {
+
+    main {
+    max-width: 75rem;
+    }
+
+    /* PORTADA */
+    .contenedor-portada {
+        grid-template-columns: 2fr 1fr;
+        gap: var(--espaciado-grande);
+    }
+
+    /* SERVICIOS */
+    .tarjeta-contenedor {
+        display: flex;
+    }
+
+    .tarjeta {
+        flex: 1;
+    }
+
+    /* NUESTRA FLOTA */
+    .nuestra-flota {
+        grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr)); 
+    }
+
+    /* RUTAS */
+    .rutas-contenedor {
+        display: flex;
+    }
+
+    /* FORMULARIO */
+    form {
+        max-width: 900px;
+    }
 }

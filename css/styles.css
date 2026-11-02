@@ -430,8 +430,31 @@ aside li {
 
 
 /* ==================================================
-   7. FORMULARIO
+    7. FORMULARIO
    ================================================== */
+
+.escribenos-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--texto-principal);
+    padding: var(--espaciado-pequeño) 0px;
+}
+
+.escribenos-contenedor a {
+    color: var(--fondos);
+}
+
+.escribenos-contenedor a:hover {
+    color: var(--elementos-decorativos);
+}
+
+.horarios li {
+    list-style: none;
+    font-weight: 600;
+    margin-bottom: var(--espaciado-pequeño);
+}
+
 
 input,
 select,
@@ -439,19 +462,16 @@ textarea {
     display: block;
     width: 100%;
     padding: var(--espaciado-pequeño);
-    margin-top: var(--espaciado-pequeño);
+    margin: var(--espaciado-pequeño) 0px;
 }
 
 label {
     margin: var(--espaciado-pequeño) 0px 0px var(--espaciado-pequeño);
 }
 
-.input-forma label{
-    margin: var(--espaciado-pequeño) 0px 0px 0px;
-}
-
 form {
-    padding: var(--espaciado-grande);
+    max-width: 100vw;
+    padding: var(--espaciado-mediano);
     box-shadow: 0 0 8px var(--texto-secundario);
     border-radius: 15px;
     margin: 0px var(--espaciado-pequeño);
@@ -459,6 +479,10 @@ form {
 
 form h2{
     margin-top: 0px;
+}
+
+.input-forma label{
+    margin: var(--espaciado-pequeño) 0px 0px 0px;
 }
 
 .seccion-tusdatos {
@@ -490,7 +514,7 @@ form button {
 
 .seccion-formulario {
     padding-top: var(--espaciado-mediano);
-    margin-bottom: var(--espaciado-grande);
+    margin-bottom: var(--espaciado-mediano);
     border-radius: 10px;
 }
 

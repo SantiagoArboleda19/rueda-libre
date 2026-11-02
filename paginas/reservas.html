@@ -47,23 +47,19 @@
 
                 <div class="descripcion-portada">
                     <p>
-                        Bienvenido a Rueda Libre.
-                        <a href="#encuentranos">Encuéntranos</a>
-                        y descubre nuestros servicios.
+                        Reserva tu bicicleta en pocos pasos y prepárate para recorrer la ciudad a tu propio ritmo. ¡Nosotros ponemos las ruedas, tú la aventura!
                     </p>
-
-                    <div>
-                        <a class="reserva" href="paginas/reservas.html">RESERVA AHORA</a>
-                    </div>
                 </div>
             </div>
         </section>
 
-        <a href="mailto:hola@ruedalibre.example">
-            Escríbenos
-        </a>
-
-        <section>
+        <section id="horarios" class="horarios">
+            <div class="escribenos-contenedor">
+                <a href="mailto:hola@ruedalibre.example">
+                    Escríbenos a nuestro correo    electronico
+                </a>
+            </div>
+            <h2>HORARIOS DE ATENCIÓN</h2>
             <ul>
                 <li>Lunes 7:00 a.m. a 7:00 p.m.</li>
                 <li>Martes 7:00 a.m. a 7:00 p.m.</li>
@@ -76,7 +72,7 @@
             </ul>
         </section>
 
-        <section>
+        <section id="formulario-seccion">
             <form id="formulario" method="post">
                 <h2>INGRESA LOS DATOS PARA RESERVAR</h2>
                 <fieldset class="seccion-formulario">
@@ -113,11 +109,11 @@
                 <fieldset class="seccion-formulario">
                     <legend>Tu reserva</legend>
 
-                    <label for="date-reservation">Fecha del alquiler</label>
+                    <label for="date-reservation">Fecha del alquiler:</label>
                     <input type="date" id="date-reservation" name="fecha_alquiler" min="2026-11-01" max="2026-12-31"
                         required>
 
-                    <label for="kind">Tipo de bicicleta</label>
+                    <label for="kind">Tipo de bicicleta:</label>
                     <select name="tipo_bicicleta" id="kind">
                         <option value="nocycle">Ninguna</option>
                         <option value="urban">Urbana</option>
@@ -139,10 +135,10 @@
                         </div>
                     </fieldset>
 
-                    <label for="quantity">Cantidad de bicicletas</label>
+                    <label for="quantity">Cantidad de bicicletas:</label>
                     <input type="number" id="quantity" name="cantidad_bicicletas" min="1" max="6" required>
 
-                    <label for="route">Recorridos guiados</label>
+                    <label for="route">Recorridos guiados:</label>
                     <select name="recorrido_guiado" id="route">
                         <option value="noroute">Ninguna</option>
                         <option value="river">Río y parques</option>

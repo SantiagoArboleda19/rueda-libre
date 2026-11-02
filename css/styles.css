@@ -27,13 +27,11 @@ body {
     font-family: var(--fuente-textos);
     color: var(--texto-secundario);
     background-color: var(--fondos);
-    margin: 0px 0px 0px 0px;
-    position: relative;
+    margin: 0px;
 }
 
 main {
     margin: auto;
-    max-width: 75rem;
 }
 
 
@@ -46,7 +44,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+caption {
     font-family: var(--fuente-titulos);
     color: var(--texto-principal);
     margin-left: var(--espaciado-mediano);
@@ -78,7 +77,7 @@ button:focus {
 
 .menu {
     margin: 0px;
-    max-width: 100%;
+    min-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -165,16 +164,13 @@ button:focus {
 /* ==================================================
    PORTADA 
    ================================================== */
-
-.contenedor-portada {
-}
-
+   
 .contenedor-portada figure {
     margin: 0px;
 }
 
 .contenedor-portada img {
-    min-width: 100%;
+    width: 100%;
 }
 
 .descripcion-portada {
@@ -198,6 +194,7 @@ button:focus {
     background-color: var(--botones-principales);
     color: var(--fondos);
     border-radius: 17px;
+    
 }
 
 .reserva:hover {
@@ -377,14 +374,24 @@ button:focus {
    ================================================== */
 
 table {
-    width: 100%;
+    width: 95%;
     border-collapse: collapse;
+    margin: var(--espaciado-mediano) var(--espaciado-pequeño) var(--espaciado-pequeño) var(--espaciado-pequeño);
+}
+
+table caption {
+    font-weight: bold;
+    margin-bottom: var(--espaciado-pequeño);
+}
+
+.tabla p {
+    margin-top: 0px;
 }
 
 th,
 td {
     border: 1px solid var(--texto-secundario);
-    padding: var(--espaciado-pequeño);
+    padding: 0.3rem 0.1rem 0.1rem 0.1rem;
     text-align: left;
 }
 
@@ -393,20 +400,33 @@ th {
     color: var(--fondos);
 }
 
-.new-container {
-    position: relative;
+aside div {
+    background-color: var(--texto-principal);
+    padding: var(--espaciado-pequeño) 0px;
 }
 
-#new {
-    position: absolute;
-    padding: 0.3rem;
-    right: 0.3rem;
-    bottom: 0.2rem;
-    background-color: var(--elementos-decorativos);
+aside p{
     color: var(--fondos);
-    font-weight: bold;
-    border-radius: 4px;
+    font-weight: 700;
+    margin: 0px 0px 0px var(--espaciado-pequeño);
 }
+
+aside ul {
+    margin-top: var(--espaciado-pequeño);
+}
+
+aside li {
+    list-style: none;
+    font-weight: 700;
+}
+
+
+.reserva-contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+
 
 
 /* ==================================================

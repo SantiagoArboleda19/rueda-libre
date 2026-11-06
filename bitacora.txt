@@ -404,3 +404,19 @@ Se utilizó Flexbox mediante display: flex, align-items: center y justify-conten
 6. Pie de página – Flexbox
 
 Se utilizó Flexbox mediante display: flex, justify-content: space-around y align-items: center. Se eligió porque permite distribuir horizontalmente el nombre del proyecto, el correo electrónico y el año, manteniendo una alineación vertical y una separación uniforme.
+
+MINIRETO 4 SEMANA 3 ---------------------------------------------------------------------------------
+
+Definición de las reglas del kit de componentes
+
+Se estableció un sistema de diseño para mantener la consistencia visual entre todos los componentes de Rueda Nocturna.
+
+1. Colores: Se definió una paleta basada en tonos azules, grises y blancos. El azul oscuro se utiliza en encabezados y pie de página, el azul principal en botones y elementos interactivos, y los tonos claros como fondos. También se conservaron los colores verde y ámbar para representar estados de éxito y advertencia.
+
+2. Espaciado: Se estableció una escala uniforme de 4, 8, 16, 24, 32 y 48 píxeles, utilizando las clases correspondientes de Tailwind CSS para organizar rellenos, márgenes y separaciones entre elementos.
+
+3. Radios de borde: Se definieron cuatro niveles: `rounded-lg` para campos de formulario, `rounded-xl` para elementos pequeños, `rounded-2xl` para tarjetas y alertas, y `rounded-full` para botones.
+
+Aplicación: Estas reglas se aplicaron a los botones, tarjetas, alertas, formulario, encabezado y pie de página para conseguir una interfaz más organizada, consistente y fácil de mantener.
+
+MINIRETO 5 SEMANA 3 -------------------------------------------------------------------------------------------------------------------------------

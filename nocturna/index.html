@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rueda Libre | Nocturna</title>
+    <meta name="description" content="Pagina nocturna de Rueda Libre">
+    <link rel="stylesheet" href="../src/output.css">
+</head>
+<body class="bg-slate-100">
+    <section class="mx-auto max-w-full" >
+        <p class="bg-blue-950 w-full p-8 mx-auto font-medium text-white text-3xl">Nuevo · Jueves a sábado</p>
+        <h1 class="my-5 mx-auto font-sans font-bold text-center text-blue-700 text-7xl">Rueda Nocturna</h1>
+        <p class="max-w-2xl mx-auto font-medium text-center text-xl">Descubre Medellín en bici cuando se encienden las luces</p>
+        <div class="mx-auto max-w-xs pt-5 pb-7 flex flex-col justify-center">
+            <ul class="self-center">
+                <li
+                class="mb-4 min-w-32 font-medium text-center text-blue-950 rounded-lg border-l-4 border-r-4 border-blue-950">
+                3 rutas
+                </li>
+                <li 
+                class="mb-4 min-w-32 font-medium text-center text-blue-950 rounded-lg border-l-4 border-r-4 border-blue-950">
+                Desde $55.000
+                </li>
+            </ul>
+            <a class="px-2 py-3 bg-blue-700 font-medium text-center text-white rounded-full 
+            transform ease-in-out duration-100 
+            hover:-translate-y-1
+            focus:outline-4 focus:outline focus:outline-blue-950 focus:outline-offset-2 " href="#inscripcion">Inscríbete</a>
+        </div>
+        
+    </section>  
+
+<!--1. 
+Modo claro (Light)
+
+Uso	Clase           Tailwind	        Valor HEX
+Fondo principal	    bg-slate-50	        #F8FAFC
+Tarjetas	        bg-white	        #FFFFFF
+Fondo secundario	bg-blue-100	        #DBEAFE
+Azul principal	    bg-blue-600	        #2563EB
+Hover	            bg-blue-700	        #1D4ED8
+Texto principal	    text-slate-900	    #0F172A
+Texto secundario	text-slate-600	    #475569
+Bordes	            border-slate-200	#E2E8F0
+
+2. Modo oscuro (Dark)
+Uso	Clase           Tailwind	        Valor HEX
+Fondo principal     bg-slate-950	    #020617
+Tarjetas	        bg-slate-900	    #0F172A
+Fondo secundario	bg-blue-950	        #172554
+Azul principal	    bg-blue-400 	    #60A5FA
+Hover	            bg-blue-500	        #3B82F6
+Texto principal 	text-slate-100	    #F1F5F9
+Texto secundario	text-slate-400	    #94A3B8
+Bordes             	border-slate-800	#1E293B-->
+
+    <section id="rutas">
+        <h2 class="ml-7 mb-3 text-blue-700 text-4xl font-sans font-bold">
+            Rutas
+        </h2>
+        <article class="max-w-sm mx-auto bg-white pb-4 mb-5 border-slate-300 border-b-4 
+        rounded-3xl 
+        flex flex-col gap-3">
+                <figure class="min-w-full">
+                    <img class=" rounded-3xl"
+                    src="../img/luces-del-centro.jpg " alt="">
+                </figure>
+                <div class="flex flex-col gap-2 mx-3">
+                    <p class="max-w-28 bg-green-600 rounded-3xl 
+                    text-center text-slate-100 font-medium">
+                        Facil
+                    </p>
+                    <h3 class="text-slate-900 text-2xl font-sans font-bold">
+                        Luces del centro
+                    </h3>
+                    <ul class="flex gap-4">
+                        <li class="text-slate-600 font-bold text-base">🗺️10km</li>
+                        <li class="text-slate-600 font-bold text-base">⏱️2h</li>
+                        <li class="text-slate-600 font-bold text-base">👌Fácil</li>
+                    </ul>
+                    <span class="
+                    p-2 max-w-40
+                    bg-blue-100 border-2 border-slate-300 text-center font-bold text-
+                    rounded-full">$55.000</span>
+                    <a class="px-2 py-4 mt-1 w-56 bg-blue-700 font-medium text-center text-white rounded-full 
+                    transform ease-in-out duration-100 
+                    hover:-translate-y-1
+                    focus:outline-4 focus:outline focus:outline-blue-950 focus:outline-offset-2
+                    self-center" href="#inscripcion">Inscríbete
+                    </a>
+                </div>
+            </div>
+        </article>
+        <article class="max-w-sm mx-auto bg-white pb-4 mb-5 border-slate-300 border-b-4 
+        rounded-3xl 
+        flex flex-col gap-3">
+                <figure class="min-w-full">
+                    <img class=" rounded-3xl"
+                    src="../img/miradores-de-ciudad.jpg " alt="">
+                </figure>
+                <div class="flex flex-col gap-2 mx-3">
+                    <p class="max-w-28 bg-orange-600 rounded-3xl 
+                    text-center text-slate-100 font-bold">
+                        Facil
+                    </p>
+                    <h3 class="text-slate-900 text-2xl font-sans font-bold">
+                        Miradores de la Ciudad
+                    </h3>
+                    <ul class="flex gap-4">
+                        <li class="text-slate-600 font-bold text-base">🗺️16km</li>
+                        <li class="text-slate-600 font-bold text-base">⏱️3h</li>
+                        <li class="text-slate-600 font-bold text-base">👌Medio</li>
+                    </ul>
+                    <span class="
+                    p-2 max-w-40
+                    bg-blue-100 border-2 border-slate-300 text-center font-bold text-
+                    rounded-full">$75.000</span>
+                    <a class="px-2 py-4 mt-1 w-56 bg-blue-700 font-medium text-center text-white rounded-full 
+                    transform ease-in-out duration-100 
+                    hover:-translate-y-1
+                    focus:outline-4 focus:outline focus:outline-blue-950 focus:outline-offset-2
+                    self-center" href="#inscripcion">Inscríbete
+                    </a>
+                </div>
+            </div>
+        </article>
+        <article class="max-w-sm mx-auto bg-white pb-4 mb-5 border-slate-300 border-b-4 
+        rounded-3xl 
+        flex flex-col gap-3">
+                <figure class="min-w-full">
+                    <img class=" rounded-3xl"
+                    src="../img/luna-en-las-palmas.jpg " alt="">
+                </figure>
+                <div class="flex flex-col gap-2 mx-3">
+                    <p class="max-w-28 bg-red-600 rounded-3xl 
+                    text-center text-slate-100 font-black">
+                        Facil
+                    </p>
+                    <h3 class="text-slate-900 text-2xl font-sans font-bold">
+                        Luna en Las Palmas
+                    </h3>
+                    <ul class="flex gap-4">
+                        <li class="text-slate-600 font-bold text-base">🗺️22km</li>
+                        <li class="text-slate-600 font-bold text-base">⏱️3,5h</li>
+                        <li class="text-slate-600 font-bold text-base">👌Difícil</li>
+                    </ul>
+                    <span class="
+                    p-2 max-w-40
+                    bg-blue-100 border-2 border-slate-300 text-center font-bold text-
+                    rounded-full">$95.000</span>
+                    <a class="px-2 py-4 mt-1 w-56 bg-blue-700 font-medium text-center text-white rounded-full 
+                    transform ease-in-out duration-100 
+                    hover:-translate-y-1
+                    focus:outline-4 focus:outline focus:outline-blue-950 focus:outline-offset-2
+                    self-center" href="#inscripcion">Inscríbete
+                    </a>
+                </div>
+            </div>
+        </article>
+    </section>
+    <footer>
+        <p class="py-8 text-center bg-blue-950 text-white font-bold">SantiDev.</p>
+    </footer>
+</body>
+</html>

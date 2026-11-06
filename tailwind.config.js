@@ -2,7 +2,7 @@
 module.exports = {
   content: [
     "./*index.html",
-    "./nocturna/*prototipo.html",
+    "./nocturna/*index.html",
     "./src/**/*.html",
     "./src/**/*.js"
   ],

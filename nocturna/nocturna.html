@@ -12,18 +12,42 @@
 
 <body class="bg-slate-200">
 
-    <header class="bg-blue-950 py-8">
-        <nav aria-label="Navegación principal">
-            <ul class="flex justify-end gap-5 mr-3">
-                <li class="font-bold text-md text-white">
-                    <a href="index.html">Nocturna</a>
-                </li>
-                <li class="font-bold text-md text-white">
-                    <a href="componentes.html">Componentes</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <header class="bg-blue-950">
+    <div class="max-w-6xl mx-auto px-4 py-5 flex flex-col items-center gap-5 md:flex-row md:justify-between">
+
+        <a href="#inicio" class="text-2xl font-bold text-white">
+            Rueda Nocturna
+        </a>
+        <div class="flex flex-wrap items-center justify-center gap-5">
+            <nav aria-label="Navegación principal">
+                <ul class="flex items-center gap-5">
+                    <li>
+                        <a href="#inicio" class="font-bold text-white hover:text-blue-300">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#rutas" class="font-bold text-white hover:text-blue-300">
+                            Rutas
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="../index.html" class="font-bold text-white hover:text-amber-200">
+                    Rueda Libre
+                </a>
+
+                <a href="componentes.html" class="font-bold text-white hover:text-cyan-200">
+                    Componentes
+                </a>
+            </div>
+
+        </div>
+    </div>
+</header>
 
     <main>
         <div class="max-w-6xl mx-auto px-4">
@@ -65,7 +89,7 @@
 
             <section id="rutas">
 
-                <h2 class="ml-7 mb-3 text-blue-700 text-4xl font-sans font-bold">
+                <h2 class="mb-3 text-center text-3xl font-bold font-sans text-blue-700">
                     Rutas
                 </h2>
 
@@ -192,17 +216,76 @@
                             Inscríbete
                         </a>
                     </div>
-
                 </article>
-
             </section>
 
+            <section id="como-funciona" class="py-10 mb-3">
+                <h2 class="mb-3 text-center text-3xl font-bold font-sans text-blue-700">
+                    ¿Cómo funciona?
+                </h2>
+                <p class="max-w-2xl mx-auto mb-8 text-center text-slate-700">
+                    Disfrutar de Medellín sobre dos ruedas es muy sencillo.
+                    Sigue estos cuatro pasos y prepárate para vivir una experiencia nocturna diferente.
+                </p>
+
+                <ol class="flex flex-col gap-5">
+                    <li class="p-5 bg-white rounded-2xl border-b-4 border-blue-900">
+                        <span class="text-3xl font-black text-blue-700">01</span>
+                        <h3 class="mt-2 mb-2 text-xl font-bold text-slate-900">
+                            Elige tu ruta
+                        </h3>
+                        <p class="text-slate-600">
+                            Explora nuestros recorridos nocturnos y selecciona el que mejor se adapte
+                            a tu ritmo, tus preferencias y tus ganas de descubrir la ciudad.
+                        </p>
+                    </li>
+
+                    <li class="p-5 bg-white rounded-2xl border-b-4 border-blue-900">
+                        <span class="text-3xl font-black text-blue-700">02</span>
+                        <h3 class="mt-2 mb-2 text-xl font-bold text-slate-900">
+                            Inscríbete
+                        </h3>
+                        <p class="text-slate-600">
+                            Completa el formulario de inscripción con tus datos y reserva tu lugar
+                            para disfrutar del recorrido que elegiste.
+                        </p>
+                    </li>
+
+                    <li class="p-5 bg-white rounded-2xl border-b-4 border-blue-900">
+                        <span class="text-3xl font-black text-blue-700">03</span>
+                        <h3 class="mt-2 mb-2 text-xl font-bold text-slate-900">
+                            Recoge tu equipo
+                        </h3>
+                        <p class="text-slate-600">
+                            Llega al punto de encuentro, recibe tu bicicleta y los elementos
+                            de seguridad necesarios para disfrutar del recorrido.
+                        </p>
+                    </li>
+
+                    <li class="p-5 bg-white rounded-2xl border-b-4 border-blue-900">
+                        <span class="text-3xl font-black text-blue-700">04</span>
+                        <h3 class="mt-2 mb-2 text-xl font-bold text-slate-900">
+                            ¡A rodar!
+                        </h3>
+                        <p class="text-slate-600">
+                            Sigue el recorrido junto a nuestro grupo, descubre Medellín iluminada
+                            y disfruta de una experiencia diferente sobre dos ruedas.
+                        </p>
+                    </li>
+                </ol>
+            </section>
         </div>
     </main>
 
-    <footer>
-        <p class="py-8 text-center bg-blue-950 text-white font-bold">
+    <footer class="py-8 px-4 bg-blue-950 text-white font-bold flex flex-col items-center gap-3">
+        <p>
             SantiDev.
+        </p>
+        <p>
+            Rueda Nocturna
+        </p>
+        <p>
+            2026
         </p>
     </footer>
 

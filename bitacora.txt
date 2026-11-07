@@ -420,3 +420,5 @@ Se estableció un sistema de diseño para mantener la consistencia visual entre 
 Aplicación: Estas reglas se aplicaron a los botones, tarjetas, alertas, formulario, encabezado y pie de página para conseguir una interfaz más organizada, consistente y fácil de mantener.
 
 MINIRETO 5 SEMANA 3 -------------------------------------------------------------------------------------------------------------------------------
+
+Para este punto voy a utilizar flex ya que es algo visual, en temas de maquetación se utilizara grid.

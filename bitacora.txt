@@ -422,3 +422,23 @@ Aplicación: Estas reglas se aplicaron a los botones, tarjetas, alertas, formula
 MINIRETO 5 SEMANA 3 -------------------------------------------------------------------------------------------------------------------------------
 
 Para este punto voy a utilizar flex ya que es algo visual, en temas de maquetación se utilizara grid.
+
+MINIRETO 6 SEMANA 3 --------------------------------------------------------------------------------------------------------------------------------
+
+Revisión a 360 px
+
+Se revisó la landing en un ancho de 360 px para identificar elementos que se desbordaran, se superpusieran o perdieran legibilidad.
+
+Durante la revisión no se encontraron elementos rotos ni desbordamientos horizontales. La estructura se mantuvo funcional porque la landing fue desarrollada inicialmente con un enfoque Mobile First, utilizando clases de Tailwind CSS y Flexbox para adaptar la distribución de los elementos al espacio disponible.
+
+Los elementos que contienen texto pueden realizar saltos de línea cuando el ancho de pantalla lo requiere, evitando que el contenido se salga de la pantalla. Las tarjetas y demás componentes también se mantienen dentro del ancho disponible.
+
+Resultado: no fue necesario realizar correcciones específicas por problemas de visualización a 360 px.
+
+Ancho	Rutas	    Pasos	    Encabezado
+360 px	1 columna	1 columna	Apilado, sin navegación interna
+768 px	2 columnas	2 columnas	En fila, navegación visible
+1024 px	3 columnas	4 columnas	En fila, navegación visible
+1280 px	3 columnas	4 columnas	En fila, navegación visible
+
+Toda la lading se adapta al tamaño de la pagina.

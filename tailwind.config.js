@@ -5,7 +5,8 @@ module.exports = {
     "./nocturna/*nocturna.html",
     "./nocturna/*componentes.html",
     "./src/**/*.html",
-    "./src/**/*.js"
+    "./src/**/*.js",
+    "./test/*practica.html"
   ],
   theme: {
     extend: {

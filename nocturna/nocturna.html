@@ -551,6 +551,267 @@
 
             </section>
 
+            <section id="form" class="mb-3 pb-10">
+
+                <h2 class="mb-6
+                        font-montserrat text-center text-2xl font-bold
+                        text-blue-700
+                        sm:text-3xl md:text-4xl
+                        dark:text-glaucous">
+                    Inscripciones
+                </h2>
+
+                <form action=""
+                    class="border-4 border-azul-noche rounded-2xl
+                        bg-white
+                        dark:border-glaucous dark:bg-vivid-royal">
+
+                    <div class="flex flex-col items-center gap-5 w-full mx-auto my-3">
+
+                        <fieldset class="w-full max-w-full px-3 flex flex-col gap-5 border-t-4 border-azul-noche
+                                        dark:border-glaucous">
+
+                            <legend class="font-open-sans font-bold text-xl px-1
+                                        text-azul-noche
+                                        dark:text-ghost-white">
+                                Datos personales
+                            </legend>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+                                <div>
+                                    <label for="name"
+                                        class="block mb-2 font-open-sans font-bold
+                                            text-azul-noche dark:text-ghost-white">
+                                        Nombre:
+                                    </label>
+
+                                    <input
+                                        id="name"
+                                        type="text"
+                                        name="nombre"
+                                        minlength="3"
+                                        placeholder="Ingresa tu nombre completo"
+                                        class="block w-full py-2 pl-4 rounded-full border border-slate-300
+                                            bg-crema-rodante text-azul-noche
+                                            focus:outline-2 focus:outline-verde-ruta
+                                            dark:bg-ghost-white dark:text-glaucous dark:border-glaucous"
+                                        required
+                                    >
+                                </div>
+
+                                <div>
+                                    <label for="email"
+                                        class="block mb-2 font-open-sans font-bold
+                                            text-azul-noche dark:text-ghost-white">
+                                        Correo:
+                                    </label>
+
+                                    <input
+                                        id="email"
+                                        type="email"
+                                        name="correo"
+                                        placeholder="ejemplo@correo.com"
+                                        class="block w-full py-2 pl-4 rounded-full border border-slate-300
+                                            bg-crema-rodante text-azul-noche
+                                            focus:outline-2 focus:outline-verde-ruta
+                                            dark:bg-ghost-white dark:text-glaucous dark:border-glaucous"
+                                        required
+                                    >
+                                </div>
+
+                            </div>
+
+                            <div>
+                                <label for="cel"
+                                    class="block mb-2 font-open-sans font-bold
+                                        text-azul-noche dark:text-ghost-white">
+                                    Teléfono:
+                                </label>
+
+                                <input
+                                    id="cel"
+                                    type="tel"
+                                    name="celular"
+                                    pattern="3[0-9]{9}"
+                                    title="Ingresa un celular de 10 dígitos que empiece por 3"
+                                    placeholder="3001234567"
+                                    class="block w-full py-2 pl-4 rounded-full border border-slate-300
+                                        bg-crema-rodante text-azul-noche
+                                        focus:outline-2 focus:outline-verde-ruta
+                                        dark:bg-ghost-white dark:text-glaucous dark:border-glaucous"
+                                    required
+                                >
+                            </div>
+
+                        </fieldset>
+
+                        <fieldset class="w-full max-w-full px-3 flex flex-col gap-5 border-t-4 border-azul-noche
+                                        dark:border-glaucous">
+
+                            <legend class="font-open-sans font-bold text-xl px-1
+                                        text-azul-noche dark:text-ghost-white">
+                                Experiencia
+                            </legend>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+                                <div>
+                                    <label for="rute"
+                                        class="block mb-2 font-open-sans font-bold
+                                            text-azul-noche dark:text-ghost-white">
+                                        Ruta:
+                                    </label>
+
+                                    <select name="ruta" id="rute"
+                                        class="block w-full py-2 pl-4 rounded-full border border-slate-300
+                                            bg-crema-rodante text-azul-noche
+                                            focus:outline-2 focus:outline-verde-ruta
+                                            dark:bg-ghost-white dark:text-glaucous dark:border-glaucous"
+                                        required>
+
+                                        <option value="" selected disabled>Selecciona una ruta</option>
+                                        <option value="luces-centro">Luces del centro</option>
+                                        <option value="miradores-ciudad">Miradores de la Ciudad</option>
+                                        <option value="luna-palmas">Luna en Las Palmas</option>
+
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label for="day"
+                                        class="block mb-2 font-open-sans font-bold
+                                            text-azul-noche dark:text-ghost-white">
+                                        Día de salida:
+                                    </label>
+
+                                    <select name="dia" id="day"
+                                        class="block w-full py-2 pl-4 rounded-full border border-slate-300
+                                            bg-crema-rodante text-azul-noche
+                                            focus:outline-2 focus:outline-verde-ruta
+                                            dark:bg-ghost-white dark:text-glaucous dark:border-glaucous"
+                                        required>
+
+                                        <option value="" selected disabled>Selecciona un día</option>
+                                        <option value="jueves">Jueves</option>
+                                        <option value="viernes">Viernes</option>
+                                        <option value="sabado">Sábado</option>
+
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+                                <div>
+                                    <label for="side"
+                                        class="block mb-2 font-open-sans font-bold
+                                            text-azul-noche dark:text-ghost-white">
+                                        Acompañantes:
+                                    </label>
+
+                                    <input
+                                        id="side"
+                                        type="number"
+                                        name="acompanantes"
+                                        min="0"
+                                        max="3"
+                                        placeholder="0 a 3"
+                                        class="block w-full py-2 pl-4 rounded-full border border-slate-300
+                                            bg-crema-rodante text-azul-noche
+                                            focus:outline-2 focus:outline-verde-ruta
+                                            dark:bg-ghost-white dark:text-glaucous dark:border-glaucous"
+                                        required
+                                    >
+                                </div>
+
+                                <div>
+                                    <label for="level"
+                                        class="block mb-2 font-open-sans font-bold
+                                            text-azul-noche dark:text-ghost-white">
+                                        Nivel de experiencia:
+                                    </label>
+
+                                    <select name="nivel" id="level"
+                                        class="block w-full py-2 pl-4 rounded-full border border-slate-300
+                                            bg-crema-rodante text-azul-noche
+                                            focus:outline-2 focus:outline-verde-ruta
+                                            dark:bg-ghost-white dark:text-glaucous dark:border-glaucous"
+                                        required>
+
+                                        <option value="" selected disabled>Selecciona tu nivel</option>
+                                        <option value="principiante">Principiante</option>
+                                        <option value="intermedio">Intermedio</option>
+                                        <option value="avanzado">Avanzado</option>
+
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            <div class="w-full max-w-full">
+
+                                <label for="boolean"
+                                    class="block mb-2 font-open-sans font-bold
+                                        text-azul-noche dark:text-ghost-white">
+                                    ¿Tiene bicicleta?
+                                </label>
+
+                                <select name="tiene-bicicleta" id="boolean"
+                                    class="block w-full py-2 pl-4 rounded-full border border-slate-300
+                                        bg-crema-rodante text-azul-noche
+                                        focus:outline-2 focus:outline-verde-ruta
+                                        dark:bg-ghost-white dark:text-glaucous dark:border-glaucous"
+                                    required>
+
+                                    <option value="" selected disabled>Selecciona una opción</option>
+                                    <option value="si">Sí</option>
+                                    <option value="no">No</option>
+
+                                </select>
+
+                            </div>
+
+                        </fieldset>
+
+                        <fieldset class="w-full max-w-full px-3 flex flex-col gap-5 border-t-4 border-azul-noche
+                                        dark:border-glaucous">
+
+                            <legend class="font-open-sans font-bold text-xl px-1
+                                        text-azul-noche dark:text-ghost-white">
+                                Términos y condiciones
+                            </legend>
+
+                            <div class="text-azul-noche dark:text-ghost-white">
+
+                                <label for="terms">
+                                    ¿Aceptas los términos y condiciones?
+                                </label>
+
+                                <input
+                                    id="terms"
+                                    type="checkbox"
+                                    name="terminos-condiciones"
+                                    required
+                                >
+
+                            </div>
+
+                        </fieldset>
+
+                    </div>
+
+                    <div class="px-3 pb-4">
+                        <button type="submit" class="btn-ruta">
+                            Enviar inscripción
+                        </button>
+                    </div>
+
+                </form>
+
+            </section>
+
         </div>
 
     </main>

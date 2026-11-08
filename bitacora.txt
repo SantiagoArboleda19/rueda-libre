@@ -499,3 +499,38 @@ Recomendación para Rueda Libre
 Para Rueda Libre recomiendo Tailwind CSS porque el proyecto necesita una identidad visual propia, con colores, tipografías, componentes y diseños adaptables a diferentes dispositivos.
 
 Además, su sistema de utilidades permite personalizar los elementos directamente en el marcado y reutilizar patrones mediante @apply cuando existen estilos repetidos, como ocurre con los botones de Rueda Nocturna.
+
+MINIRETO9 SEMANA3 ----------------------------------------------------------------------------
+
+Pruebas del formulario de inscripción – Rueda Nocturna
+
+Se realizaron pruebas de funcionamiento, validación y accesibilidad del formulario.
+
+1. Envío con campos vacíos
+
+Se intentó enviar el formulario sin ingresar información. El navegador impidió el envío y solicitó completar los campos obligatorios gracias al atributo `required`.
+
+2. Envío con datos inválidos
+
+Se probaron diferentes valores que no cumplían las condiciones establecidas:
+
+- Nombre: no permitió ingresar nombres con menos de 3 caracteres.
+- Correo electrónico:** exigió un formato válido que incluyera el símbolo `@`.
+- Celular: rechazó los números que no cumplían el patrón definido.
+- Demás campos: se verificaron las restricciones establecidas para las opciones y los valores permitidos.
+
+El navegador impidió el envío mientras existían datos inválidos.
+
+3. Envío con datos completos y válidos
+
+Se completaron todos los campos con información válida. El formulario permitió enviarlo y la página se recargó.
+
+Sin embargo, se identificó que actualmente no existe un servidor ni una base de datos conectados para almacenar las inscripciones. Por lo tanto, la prueba confirma que funciona la validación del formulario, pero no que la información quede registrada.
+
+4. Prueba de accesibilidad
+
+Se recorrieron los campos utilizando únicamente el teclado. Se comprobó que es posible navegar por los controles del formulario y completar sus campos sin utilizar el mouse.
+
+Conclusión
+
+El formulario cumple con las validaciones HTML solicitadas y permite la navegación mediante teclado. Queda pendiente una conexión con un servicio backend para recibir y almacenar las inscripciones.

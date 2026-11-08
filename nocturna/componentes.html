@@ -1,157 +1,262 @@
-<!doctype html>
-<html lang="en">
+
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rueda Nocturna | Componentes</title>
-    <meta name="description" content="Pagina de componentes utilizados en rueda nocturna" />
-    <link rel="stylesheet" href="../src/output.css" />
+    <meta name="description" content="Página de componentes utilizados en Rueda Nocturna">
+    <link rel="stylesheet" href="../src/output.css">
 </head>
 
-<body class="bg-slate-200">
-    <header class="bg-blue-950 py-8">
+<body class="bg-crema-rodante dark:bg-coffee-bean dark:text-ghost-white">
+
+    <header class="bg-blue-950 py-8 dark:bg-vivid-royal">
         <nav aria-label="Navegación principal">
-            <ul class="flex justify-center gap-5 mr-3">
+            <ul class="flex flex-wrap justify-center gap-5 mr-3">
                 <li>
-                    <a href="../index.html" class="font-bold text-md text-white">Rueda Libre-CSS</a>
+                    <a href="../index.html"
+                        class="font-montserrat font-bold text-md text-white hover:text-verde-ruta dark:text-ghost-white dark:hover:text-scarlet-fire">
+                        Rueda Libre-CSS
+                    </a>
                 </li>
-                <li class="font-bold text-md text-white">
+
+                <li class="font-montserrat font-bold text-md text-white hover:text-verde-ruta dark:text-ghost-white dark:hover:text-scarlet-fire">
                     <a href="nocturna.html">Nocturna</a>
                 </li>
-                <li class="font-bold text-md text-white">
+
+                <li class="font-montserrat font-bold text-md text-white hover:text-verde-ruta dark:text-ghost-white dark:hover:text-scarlet-fire">
                     <a href="componentes.html">Componentes</a>
                 </li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <section id="hero">
-            <p>ESTA PAGINA ES NETA DEL DESAROLLO, NUNCA SALDRA A</p>
-            <h1 class="my-3 mx-auto font-sans font-bold text-center text-blue-700 text-4xl">
+
+        <section id="hero" class="px-4 py-5">
+            <p class="font-open-sans dark:text-ghost-white">
+                ESTA PÁGINA ES NETA DEL DESARROLLO, NUNCA SALDRÁ A PRODUCCIÓN
+            </p>
+
+            <h1 class="font-montserrat my-3 mx-auto font-bold text-center text-blue-700 text-4xl dark:text-glaucous">
                 Kit de componentes
             </h1>
         </section>
-        <section id="btns"  class="px-4"> 
-            <h2 class="mb-4 font-sans font-bold text-blue-700 text-4xl">Botones</h2>
-            <div class="flex flex-col md:flex-row items-center justify-center gap-4 ">
-                <a class="w-56 px-2 py-4 bg-blue-900 text-white font-medium text-center rounded-full
-        transform transition duration-100 hover:-translate-y-1
-        focus:outline-4 focus:outline focus:outline-green-950 focus:outline-offset-2 focus" href="#inscripcion">
+
+        <section id="btns" class="px-4">
+
+            <h2 class="font-montserrat mb-4 font-bold text-blue-700 text-4xl dark:text-glaucous">
+                Botones
+            </h2>
+
+            <div class="flex flex-col md:flex-row items-center justify-center gap-4">
+
+                <a class="font-montserrat w-56 px-2 py-4 bg-blue-900 text-white font-medium text-center rounded-full
+                transform transition duration-100 hover:-translate-y-1
+                focus:outline-4 focus:outline focus:outline-green-950 focus:outline-offset-2
+                dark:bg-vivid-royal dark:text-ghost-white dark:focus:outline-glaucous"
+                href="#inscripcion">
                     Principal
                 </a>
-    
-                <a class="w-56 px-2 py-4 bg-blue-600 text-white font-medium text-center rounded-full
-        transform transition duration-100 hover:-translate-y-1 hover:bg-blue-700
-        focus:outline-4 focus:outline focus:outline-blue-700 focus:outline-offset-2" href="#inscripcion">
+
+                <a class="font-montserrat w-56 px-2 py-4 bg-blue-600 text-white font-medium text-center rounded-full
+                transform transition duration-100 hover:-translate-y-1 hover:bg-blue-700
+                focus:outline-4 focus:outline focus:outline-blue-700 focus:outline-offset-2
+                dark:bg-glaucous dark:text-coffee-bean dark:hover:bg-scarlet-fire dark:hover:text-ghost-white
+                dark:focus:outline-glaucous"
+                href="#inscripcion">
                     Secundario
                 </a>
-    
-                <a class="w-56 px-2 py-4 bg-white border-2 border-slate-400 text-slate-600 font-medium text-center rounded-full
-        transform transition duration-100 hover:-translate-y-1 hover:bg-slate-100
-        focus:outline-4 focus:outline focus:outline-blue-700 focus:outline-offset-2" href="#margenes">
+
+                <a class="font-montserrat w-56 px-2 py-4 bg-white border-2 border-slate-400 text-slate-600 font-medium text-center rounded-full
+                transform transition duration-100 hover:-translate-y-1 hover:bg-slate-100
+                focus:outline-4 focus:outline focus:outline-blue-700 focus:outline-offset-2
+                dark:bg-coffee-bean dark:border-glaucous dark:text-ghost-white dark:hover:bg-vivid-royal
+                dark:focus:outline-glaucous"
+                href="#margenes">
                     Márgenes
                 </a>
+
             </div>
         </section>
-        <section id="card"  class="px-4">
-            <h2 class="mb-4 font-sans font-bold text-blue-700 text-4xl">Tarjeta</h2>
-            <article class="max-w-sm mx-auto bg-white pb-4 mb-5 border-slate-300 border-b-4 
-            rounded-3xl 
-            flex flex-col gap-3">
-                    <figure class="min-w-full">
-                        <img class=" rounded-3xl"
-                        src="../img/luces-del-centro.jpg " alt="">
-                    </figure>
-                    <div class="flex flex-col gap-2 mx-3">
-                        <div class="bg-slate-500 h-0.5 my-3"></div>
-                        <p class="max-w-28 bg-green-600 rounded-3xl 
-                        text-center text-slate-100 font-medium">
-                            Facil
-                        </p>
-                        <h3 class="text-slate-900 text-2xl font-sans font-bold">
-                            Luces del centro
-                        </h3>
-                        <ul class="flex gap-4">
-                            <li class="text-slate-600 font-bold text-base">🗺️10km</li>
-                            <li class="text-slate-600 font-bold text-base">⏱️2h</li>
-                            <li class="text-slate-600 font-bold text-base">👌Fácil</li>
-                        </ul>
-                        <span class="
-                        p-2 max-w-40
-                        bg-blue-100 border-2 border-slate-300 text-center font-bold text-
-                        rounded-full">$00.000</span>
-                        <div class="bg-slate-500 h-0.5 my-3"></div>
-                        <a class="px-2 py-4 mt-1 w-56 bg-blue-900 font-medium text-center text-white rounded-full 
-                        transform ease-in-out duration-100 
-                        hover:-translate-y-1
-                        focus:outline-4 focus:outline focus:outline-blue-950 focus:outline-offset-2
-                        self-center" href="#inscripcion">Inscríbete
-                        </a>
-                    </div>
+
+        <section id="card" class="px-4 mt-8">
+
+            <h2 class="font-montserrat mb-4 font-bold text-blue-700 text-4xl dark:text-glaucous">
+                Tarjeta
+            </h2>
+
+            <article class="w-full max-w-sm mx-auto bg-white pb-4 mb-5 border-slate-300 border-b-4
+            rounded-3xl flex flex-col gap-3 dark:bg-vivid-royal dark:border-glaucous">
+
+                <figure class="min-w-full">
+                    <img class="rounded-3xl"
+                    src="../img/luces-del-centro.jpg"
+                    alt="Recorrido nocturno por las calles iluminadas del centro de Medellín">
+                </figure>
+
+                <div class="flex flex-col gap-2 mx-3">
+
+                    <div class="bg-slate-500 h-0.5 my-3 dark:bg-glaucous"></div>
+
+                    <p class="font-open-sans max-w-28 bg-green-600 rounded-3xl text-center text-slate-100 font-bold dark:bg-green-600 dark:text-coffee-bean">
+                        Fácil
+                    </p>
+
+                    <h3 class="text-azul-noche text-2xl font-montserrat font-bold dark:text-ghost-white">
+                        Luces del centro
+                    </h3>
+
+                    <ul class="flex gap-4">
+                        <li class="font-open-sans text-slate-600 font-bold text-base dark:text-ghost-white">🗺️10km</li>
+                        <li class="font-open-sans text-slate-600 font-bold text-base dark:text-ghost-white">⏱️2h</li>
+                        <li class="font-open-sans text-slate-600 font-bold text-base dark:text-ghost-white">👌Fácil</li>
+                    </ul>
+
+                    <span class="font-open-sans p-2 max-w-40 bg-blue-100 border-2 border-slate-300 text-center font-bold rounded-full dark:bg-coffee-bean dark:border-glaucous dark:text-ghost-white">
+                        $55.000
+                    </span>
+
+                    <div class="bg-slate-500 h-0.5 my-3 dark:bg-glaucous"></div>
+
+                    <a class="font-montserrat px-2 py-4 mt-1 w-56 bg-azul-noche font-medium text-center text-white rounded-full
+                    transform ease-in-out duration-100 hover:-translate-y-1
+                    focus:outline-4 focus:outline focus:outline-azul-noche focus:outline-offset-2
+                    self-center dark:bg-coffee-bean dark:text-ghost-white dark:focus:outline-glaucous"
+                    href="#inscripcion">
+                        Inscríbete
+                    </a>
+
                 </div>
             </article>
         </section>
-        <section id="alerts"  class="px-4"> 
-            <h2 class="mb-4 font-sans font-bold text-blue-700 text-4xl">Alertas</h2>
-            <!--Construye tres alertas (información, éxito y advertencia) con fondo suave, borde lateral de color, título destacado y texto. Indica a los lectores de pantalla que la de éxito es un aviso.-->
+
+        <section id="alerts" class="px-4 mt-8">
+
+            <h2 class="font-montserrat mb-4 font-bold text-blue-700 text-4xl dark:text-glaucous">
+                Alertas
+            </h2>
+
+            <!-- Alerta de información -->
             <article class="bg-blue-200 p-4 mb-3 rounded-3xl flex gap-2">
+
                 <div class="w-5 h-24 bg-blue-600 rounded-xl"></div>
-                <div role="status"">
-                    <h3 class="text-blue-800 text-3xl font-sans font-bold">Información</h3>
-                    <p class="font-medium">Te compartimos información importante sobre este proceso. Antes de continuar, revisa cuidadosamente los detalles y asegúrate de comprender las indicaciones para evitar inconvenientes durante el desarrollo de la actividad.</p>
+
+                <div>
+                    <h3 class="text-blue-800 text-3xl font-montserrat font-bold">
+                        Información
+                    </h3>
+
+                    <p class="text-blue-900 font-open-sans font-medium">
+                        Te compartimos información importante sobre este proceso. Antes de continuar,
+                        revisa cuidadosamente los detalles y asegúrate de comprender las indicaciones
+                        para evitar inconvenientes durante el desarrollo de la actividad.
+                    </p>
                 </div>
             </article>
+
+            <!-- Alerta de éxito -->
             <article class="bg-green-200 p-4 mb-3 rounded-3xl flex gap-2">
+
                 <div class="w-5 h-24 bg-green-600 rounded-xl"></div>
-                <div>
-                    <h3 class="text-green-800 text-3xl font-sans font-bold">Éxito</h3>
-                    <p class="font-medium">¡Excelente trabajo! Tu solicitud se ha procesado correctamente y toda la información ha sido guardada de manera satisfactoria. Ya puedes continuar con el siguiente paso sin preocuparte por este procedimiento.</p>
+
+                <div role="status">
+                    <h3 class="text-green-800 text-3xl font-montserrat font-bold">
+                        Éxito
+                    </h3>
+
+                    <p class="text-green-900 font-open-sans font-medium">
+                        ¡Excelente trabajo! Tu solicitud se ha procesado correctamente y toda la
+                        información ha sido guardada de manera satisfactoria. Ya puedes continuar
+                        con el siguiente paso sin preocuparte por este procedimiento.
+                    </p>
                 </div>
             </article>
-            <article class="bg-amber-200 p-4 mb-3 rounded-3xl flex gap-2">
-                <div class="w-5 h-24 bg-amber-600 rounded-xl"></div>
+
+            <!-- Alerta de advertencia -->
+            <article class="bg-amber-200 p-4 mb-3 rounded-3xl flex gap-2 ">
+
+                <div class="w-5 h-24 bg-amber-600 rounded-xl "></div>
+
                 <div>
-                    <h3 class="text-amber-800 text-3xl font-sans font-bold">Advertencia</h3>
-                    <p class="font-medium">¡Ten cuidado! Hemos identificado una situación que requiere tu atención. Algunos datos podrían estar incompletos o presentar inconsistencias. Te recomendamos revisar la información antes de continuar para evitar posibles errores.</p>
+                    <h3 class="text-amber-800 text-3xl font-montserrat font-bold">
+                        Advertencia
+                    </h3>
+
+                    <p class="text-amber-900 font-open-sans font-medium ">
+                        ¡Ten cuidado! Hemos identificado una situación que requiere tu atención.
+                        Algunos datos podrían estar incompletos o presentar inconsistencias.
+                        Te recomendamos revisar la información antes de continuar para evitar
+                        posibles errores.
+                    </p>
                 </div>
             </article>
+
         </section>
-        <!--Construye dos campos de formulario (correo y celular), cada uno con etiqueta visible asociada, borde, relleno, texto de ejemplo, un texto de ayuda debajo y un estado de foco visible.-->
-        <section id="form" class="px-4">
-            <h2 class="mb-4 font-sans font-bold text-blue-700 text-4xl">Formulario</h2>
-            <form action="" class="bg-blue-200 p-5 mx-auto rounded-3xl border-slate-300 border-4">
-                <h3 class="text-slate-900 font-bold text-3xl">
+
+        <section id="form" class="px-4 mt-8">
+
+            <h2 class="mb-4 font-montserrat font-bold text-blue-700 text-4xl dark:text-glaucous">
+                Formulario
+            </h2>
+
+            <form action="" class="bg-blue-200 p-5 mx-auto rounded-3xl border-slate-300 border-4 dark:bg-vivid-royal dark:border-glaucous">
+
+                <h3 class="font-montserrat text-slate-900 font-bold text-3xl dark:text-ghost-white">
                     Introduce la info.
-                <h3/>
+                </h3>
+
                 <div class="mt-3 flex gap-11 flex-wrap justify-start">
+
                     <div>
-                        <label for="email" class="text-slate-900 font-bold text-xl">Correo: </label>
-                        <input id="email" type="email" class="my-2 p-1.5 bg-slate-200 block rounded-2xl border-2 border-slate-300" placeholder="example@riwi.io" required >
-                        <p class="font-medium break-words">Ingresa un correo electrónico válido.</p>
+                        <label for="email" class="font-montserrat text-slate-900 font-bold text-xl dark:text-ghost-white">
+                            Correo:
+                        </label>
+
+                        <input id="email" type="email"
+                        class="my-2 p-1.5 bg-slate-200 block rounded-2xl border-2 border-slate-300
+                        focus:outline-2 focus:outline focus:outline-blue-700 focus:outline-offset-2
+                        dark:bg-coffee-bean dark:border-glaucous dark:text-ghost-white dark:placeholder:text-glaucous dark:focus:outline-glaucous"
+                        placeholder="example@riwi.io" required>
+
+                        <p class="font-open-sans font-medium break-words dark:text-ghost-white">
+                            Ingresa un correo electrónico válido.
+                        </p>
                     </div>
+
                     <div>
-                        <label for="phone" class="text-slate-900 font-bold text-xl">Telefono:</label>
-                        <input id="phone" type="tel" class="my-2 p-1.5 bg-slate-200 block rounded-2xl border-2 border-slate-300" placeholder="300 562 4285" inputmode="numeric" pattern="3[0-9]{9}"" title="El numero debe iniciar por 3 y tener 10 digitos" required>
-                        <p class="font-medium break-words">Ingresa un número de 10 dígitos.</p>
+                        <label for="phone" class="font-montserrat text-slate-900 font-bold text-xl dark:text-ghost-white">
+                            Teléfono:
+                        </label>
+
+                        <input id="phone" type="tel"
+                        class="my-2 p-1.5 bg-slate-200 block rounded-2xl border-2 border-slate-300
+                        focus:outline-2 focus:outline focus:outline-blue-700 focus:outline-offset-2
+                        dark:bg-coffee-bean dark:border-glaucous dark:text-ghost-white dark:placeholder:text-glaucous dark:focus:outline-glaucous"
+                        placeholder="300 562 4285"
+                        inputmode="numeric"
+                        pattern="3[0-9]{9}"
+                        title="El número debe iniciar por 3 y tener 10 dígitos"
+                        required>
+
+                        <p class="font-open-sans font-medium break-words dark:text-ghost-white">
+                            Ingresa un número de 10 dígitos.
+                        </p>
                     </div>
+
                 </div>
             </form>
         </section>
-    </main>
-    <!--1. Modo claro (Light)
-    Uso	Clase           Tailwind	        Valor HEX
-    Fondo principal	    bg-slate-100	        #F8FAFC
-    Tarjetas	        bg-white	        #FFFFFF
-    Fondo secundario	bg-blue-300	        #DBEAFE
-    Azul principal	    bg-blue-600	        #2563EB
-    Hover	            bg-blue-700	        #1D4ED8
-    Texto principal	    text-slate-900	    #0F172A
-    Texto secundario	text-slate-600	    #475569
-    Bordes	            border-slate-200	#E2E8F0-->
-    <footer>
-        <p class="mt-4 py-8 text-center bg-blue-950 text-white font-bold">SantiDev.</p>
-    </footer>
-</body>
 
+    </main>
+
+    <footer class="mt-8 bg-blue-950 text-white font-bold text-center py-8 dark:bg-vivid-royal dark:text-ghost-white">
+        <p class="font-montserrat">
+            SantiDev.
+        </p>
+    </footer>
+
+</body>
 </html>

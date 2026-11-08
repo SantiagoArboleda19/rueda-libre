@@ -11,3 +11,32 @@
         box-sizing: border-box;
     }
 }
+
+@layer components {
+    .btn-inscripcion {
+        @apply font-montserrat px-4 py-2 bg-white text-azul-noche
+        font-bold rounded-full hover:text-verde-ruta
+        dark:bg-vivid-royal dark:text-ghost-white
+        dark:hover:bg-scarlet-fire dark:hover:text-ghost-white;
+    }
+
+    .btn-principal {
+        @apply font-montserrat px-2 py-3 bg-azul-noche
+        font-medium text-center text-white rounded-full
+        transform ease-in-out duration-100 hover:-translate-y-1
+        focus:outline-4 focus:outline focus:outline-azul-noche
+        focus:outline-offset-2
+        dark:bg-vivid-royal dark:text-ghost-white
+        dark:focus:outline-glaucous;
+    }
+
+    .btn-ruta {
+        @apply font-montserrat px-2 py-4 mt-1 w-56
+        bg-azul-noche font-medium text-center text-white
+        rounded-full transform ease-in-out duration-100
+        hover:-translate-y-1 focus:outline-4 focus:outline
+        focus:outline-azul-noche focus:outline-offset-2
+        self-center dark:bg-coffee-bean dark:text-ghost-white
+        dark:focus:outline-glaucous;
+    }
+}

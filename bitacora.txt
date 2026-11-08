@@ -442,3 +442,60 @@ Ancho	Rutas	    Pasos	    Encabezado
 1280 px	3 columnas	4 columnas	En fila, navegación visible
 
 Toda la lading se adapta al tamaño de la pagina.
+
+MINIRETO 8 SEMANA 3 ---------------------------------------------------------------------------------------------------------------------------------
+
+Patrones de clases repetidos:
+
+Elemento o patrón	                                                    Apariciones
+Tarjetas de rutas (article) con la misma estructura	                    3
+Tarjetas de pasos (li) con la misma estructura	                        4
+Elementos de metadatos de rutas (distancia, duración y dificultad)	    9
+Encabezados de las tarjetas de rutas (h3)	                            3
+Enlaces con el texto «Inscríbete»	                                    5
+
+Tamaño de Tailwind:
+PS C:\Users\Asus\rueda-libre> "{0:N2} KB" -f ((Get-Item .\src\output.min.css).Length / 1KB)
+15,58 KB
+
+Tamaño de CSS:
+PS C:\Users\Asus\rueda-libre> "{0:N2} KB" -f ((Get-Item .\css\styles.css).Length / 1KB)
+13,45 KB
+
+
+Comparativa: Bootstrap vs Tailwind CSS
+
+Durante el desarrollo de Rueda Libre tuve la oportunidad de conocer y repasar conceptos de Bootstrap y posteriormente trabajar de manera más profunda con Tailwind CSS. Aunque Bootstrap se abordó principalmente de forma introductoria y no se implementó ampliamente en el proyecto, este acercamiento permitió identificar algunas diferencias entre ambas herramientas y comprender sus principales características.
+
+1. Curva de aprendizaje
+
+Bootstrap permite construir interfaces rápidamente mediante componentes y clases predefinidas. Su aprendizaje inicial resulta sencillo porque ofrece estructuras listas para utilizar.
+
+Tailwind requiere familiarizarse con sus clases de utilidad y comprender cómo combinarlas. Al principio puede parecer más complejo, pero permite controlar cada detalle de los elementos.
+
+2. Personalización
+
+Bootstrap ofrece componentes con estilos establecidos que se pueden modificar mediante CSS. Sin embargo, cuando se necesita una apariencia muy específica, es posible tener que sobrescribir varios estilos.
+
+Tailwind facilita la personalización directamente desde el HTML mediante clases de utilidad. En Rueda Libre pude adaptar colores, tipografías, distribución, estados y modo oscuro utilizando la configuración de la marca.
+
+3. Tamaño final
+
+En la landing de Rueda Nocturna, el CSS minificado generado con Tailwind tuvo un tamaño de [15,58 KB].
+En la landing de Rueda Rueda Libre, el CSS puro tuvo un tamaño de [13,45 KB].
+
+En este proyecto no se realizó una implementación completa de Bootstrap ni se incorporó su JavaScript, por lo que no se cuenta con una medición propia de estos recursos dentro de Rueda Libre. La comparación se centra principalmente en el CSS generado por Tailwind frente al CSS desarrollado anteriormente de forma manual para el proyecto.
+
+El resultado permite observar cómo cambia el tamaño de los estilos al pasar de una implementación con CSS propio a una basada en Tailwind y su proceso de minificación.
+
+4. Casos de uso
+
+Bootstrap resulta conveniente cuando se necesita desarrollar rápidamente una interfaz utilizando componentes comunes y una estructura visual consistente.
+
+Tailwind es una buena alternativa cuando se busca construir una interfaz personalizada, controlar los estilos con precisión y mantener una configuración visual propia.
+
+Recomendación para Rueda Libre
+
+Para Rueda Libre recomiendo Tailwind CSS porque el proyecto necesita una identidad visual propia, con colores, tipografías, componentes y diseños adaptables a diferentes dispositivos.
+
+Además, su sistema de utilidades permite personalizar los elementos directamente en el marcado y reutilizar patrones mediante @apply cuando existen estilos repetidos, como ocurre con los botones de Rueda Nocturna.

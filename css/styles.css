@@ -205,7 +205,7 @@ button:focus {
     color: var(--texto-principal);
     outline: solid 2px var(--texto-principal);
     border-radius: 17px;
-}
+}    
 
 /* ==================================================
    5. TARJETAS DE SERVICIOS

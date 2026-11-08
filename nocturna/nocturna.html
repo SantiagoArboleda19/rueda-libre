@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="../src/output.css">
 </head>
 
-<body class="bg-crema-rodante dark:bg-coffee-bean dark:text-ghost-white">
+<body class="relative bg-crema-rodante dark:bg-coffee-bean dark:text-ghost-white">
 
-    <header class="bg-azul-noche dark:bg-vivid-royal">
+    <header class="sticky top-0 z-10 bg-azul-noche dark:bg-vivid-royal">
 
         <div class="flex flex-col items-center
                     mx-auto max-w-6xl px-4 py-5
@@ -74,7 +74,7 @@
                         Componentes
                     </a>
 
-                    <a href="#inscripcion"
+                    <a href="#form"
                         class="btn-inscripcion">
                         Inscríbete
                     </a>
@@ -143,10 +143,17 @@
 
                     </ul>
 
-                    <a class="btn-principal"
-                        href="#inscripcion">
-                        Inscríbete
-                    </a>
+                    <div class="mt-4 w-full flex gap-4">
+                        <a class="btn-principal w-full"
+                            href="#form">
+                            Inscríbete
+                        </a>
+    
+                        <a class="btn-principal w-full"
+                            href="../paginas/reservas.html">
+                            Reserva tu bicicleta
+                        </a>
+                    </div>
 
                 </div>
 
@@ -819,15 +826,17 @@
     <footer class="flex flex-col items-center
                    px-4 py-8 gap-3
                    font-bold
+                   sm:flex-row
+                   sm:justify-around
                    bg-azul-noche text-white
                    dark:bg-vivid-royal dark:text-ghost-white">
 
         <p class="font-montserrat">
-            SantiDev.
+            Rueda Libre
         </p>
 
         <p class="font-montserrat">
-            Rueda Nocturna
+            hola@ruedalibre.example
         </p>
 
         <p class="font-montserrat">

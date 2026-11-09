@@ -754,16 +754,16 @@ video {
   margin-top: 0.75rem;
 }
 
+.mt-4{
+  margin-top: 1rem;
+}
+
 .mt-5{
   margin-top: 1.25rem;
 }
 
 .mt-8{
   margin-top: 2rem;
-}
-
-.mt-4{
-  margin-top: 1rem;
 }
 
 .block{
@@ -846,10 +846,6 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.flex-row{
-  flex-direction: row;
-}
-
 .flex-col{
   flex-direction: column;
 }
@@ -866,6 +862,10 @@ video {
   justify-content: flex-start;
 }
 
+.justify-end{
+  justify-content: flex-end;
+}
+
 .justify-center{
   justify-content: center;
 }
@@ -874,8 +874,8 @@ video {
   justify-content: space-between;
 }
 
-.justify-around{
-  justify-content: space-around;
+.justify-items-end{
+  justify-items: end;
 }
 
 .gap-11{
@@ -902,12 +902,20 @@ video {
   gap: 1.5rem;
 }
 
-.gap-10{
-  gap: 2.5rem;
+.self-end{
+  align-self: flex-end;
 }
 
 .self-center{
   align-self: center;
+}
+
+.justify-self-end{
+  justify-self: end;
+}
+
+.scroll-smooth{
+  scroll-behavior: smooth;
 }
 
 .break-words{
@@ -965,6 +973,10 @@ video {
 .border-azul-noche{
   --tw-border-opacity: 1;
   border-color: rgb(20 33 61 / var(--tw-border-opacity, 1));
+}
+
+.border-scarlet-fire{
+  border-color: #ff331fff;
 }
 
 .border-slate-300{
@@ -1057,6 +1069,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
+.bg-amarillo-farol{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 209 102 / var(--tw-bg-opacity, 1));
+}
+
 .p-1\.5{
   padding: 0.375rem;
 }
@@ -1071,6 +1088,10 @@ video {
 
 .p-5{
   padding: 1.25rem;
+}
+
+.p-1{
+  padding: 0.25rem;
 }
 
 .px-1{
@@ -1147,6 +1168,10 @@ video {
   text-align: center;
 }
 
+.align-bottom{
+  vertical-align: bottom;
+}
+
 .font-montserrat{
   font-family: Montserrat, sans-serif;
 }
@@ -1173,6 +1198,11 @@ video {
 .text-base{
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-xl{
@@ -1252,6 +1282,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.text-coffee-bean{
+  color: #0d0106ff;
+}
+
 .transition{
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1273,6 +1307,11 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.hover\:translate-x-1:hover{
+  --tw-translate-x: 0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:bg-blue-700:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity, 1));
@@ -1283,9 +1322,27 @@ video {
   background-color: rgb(241 245 249 / var(--tw-bg-opacity, 1));
 }
 
+.hover\:from-transparent:hover{
+  --tw-gradient-from: transparent var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.hover\:to-transparent:hover{
+  --tw-gradient-to: transparent var(--tw-gradient-to-position);
+}
+
+.hover\:fill-transparent:hover{
+  fill: transparent;
+}
+
 .hover\:text-verde-ruta:hover{
   --tw-text-opacity: 1;
   color: rgb(30 122 79 / var(--tw-text-opacity, 1));
+}
+
+.hover\:decoration-transparent:hover{
+  text-decoration-color: transparent;
 }
 
 .focus\:outline:focus{
@@ -1417,6 +1474,10 @@ video {
     border-color: #657ed4ff;
   }
 
+  .dark\:border-scarlet-fire{
+    border-color: #ff331fff;
+  }
+
   .dark\:bg-coffee-bean{
     background-color: #0d0106ff;
   }
@@ -1446,6 +1507,10 @@ video {
 
   .dark\:bg-vivid-royal{
     background-color: #3626a7ff;
+  }
+
+  .dark\:bg-scarlet-fire{
+    background-color: #ff331fff;
   }
 
   .dark\:text-coffee-bean{

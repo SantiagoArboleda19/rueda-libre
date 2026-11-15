@@ -271,7 +271,7 @@ DATOS DE PRUEBA, MINIRETO 7-----------------------------------------------------
         "El valor debe ser igual o anterior
          a 31/12/2026"
 
-AUDITORIA MINIRETO 8-----------------------------------------------------------------------------------------------------------
+AUDITORIA MINIRETO 8 SEMANA1-----------------------------------------------------------------------------------------------------------
 
 Pirmer hallazgo: Etiquetas img sin un correcto alt.
     Corrección: Se modifica el alt de las etiquetas img importantes y se deja alt vacio para las img no importantes.
@@ -320,7 +320,7 @@ visual coherente y mejoraré la accesibilidad de Minireto 8.
 
 GITHUB PAGE: https://santiagoarboleda19.github.io/rueda-libre/
 
-HERENCIA MINIRETO9----------------------------------------------------------------------------------------------------------------
+HERENCIA MINIRETO9 SEMANA1----------------------------------------------------------------------------------------------------------------
 
 Las variables heredadas son las siguientes:
     font-family: var(--fuente-textos);
@@ -329,7 +329,7 @@ La variable que no se hereda es la siguiente:
     background-color: var(--fondos);
 
 
-ESPECIFICIDAD MINIRETO10---------------------------------------------------------------------------------------------------------
+ESPECIFICIDAD MINIRETO10 SEMANA1---------------------------------------------------------------------------------------------------------
 
 Usa DevTools para descubrir por qué la clase no se aplica. Registra en la bitácora la especificidad de cada selector y la causa del 
 problema.
@@ -349,7 +349,7 @@ El problema esta en que el primer selector tiene mayor especificidad que el segu
 para textos en lugar que el color para los enlaces. En mi codigo espicificamente se elimina el primer selector ya que el color para
 textos ya se hereda desde el cuerpo (body).
 
-MEDIDAD MINITERO 11-------------------------------------------------------------------------------------------------
+MEDIDAD MINITERO 11 SEMANA1-------------------------------------------------------------------------------------------------
 
 Mide en DevTools (Computed) el ancho total de una tarjeta antes y después de cambiar box-sizing y registra ambos
 valores en la bitácora. Haz commit y push.
@@ -404,6 +404,17 @@ Se utilizó Flexbox mediante display: flex, align-items: center y justify-conten
 6. Pie de página – Flexbox
 
 Se utilizó Flexbox mediante display: flex, justify-content: space-around y align-items: center. Se eligió porque permite distribuir horizontalmente el nombre del proyecto, el correo electrónico y el año, manteniendo una alineación vertical y una separación uniforme.
+
+MINIRETO con Bootstrap SEMANA2 -------------------------------------------------------------------------------}
+Las líneas no bajaron mucho. Ocho líneas de CSS frente a ocho clases distintas. La ventaja de Bootstrap aquí no es escribir menos, sino no tener que escribir ni mantener CSS.
+Los resultados no son iguales.
+El auto-fill con minmax(23rem, 1fr) decide solo cuántas columnas caben, y como main mide máximo 75rem, nunca pasa de 3.
+Bootstrap fija 1, 2, 3 y 4 columnas en puntos de corte concretos, y llega a 4 en xl.
+Los espacios también cambian: tú usabas 0.5rem y g-4 pone 1.5rem.
+Lo que te dio Bootstrap sin esfuerzo: una distribución responsive ya probada, sin escribir @media y con los cuatro tramos pedidos de una sola vez.
+El control que perdiste: las columnas dejan de adaptarse al ancho disponible y quedan atadas a los puntos de corte de Bootstrap. Además dependes de nombres de clases ajenos y cargas toda la librería para usar solo la grilla.
+
+
 
 MINIRETO 4 SEMANA 3 ---------------------------------------------------------------------------------
 
